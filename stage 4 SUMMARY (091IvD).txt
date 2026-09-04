@@ -1,0 +1,224 @@
+================================================================================
+091IvD  STAGE 4  —  ROBUSTNESS STRESS TEST SUMMARY
+Not a discovery pass. Each block moves a robustness score for a printable claim.
+================================================================================
+Generated   : 2026-09-04 16:44:39
+Results dir : /content/091IvD_results
+Output dir  : /content/091IvD_results/stage4
+Cohorts     : Z_trs (TRS)  vs  Z_scz (SCZ-EUR)
+
+Input tables (rows x cols):
+  31_matrix             702 x 15
+  33_down                53 x 16
+  33_up                  54 x 16
+  33_div                 97 x 16
+  36_anchor              81 x 17
+  35_modconc              5 x 7
+  34_hubs                30 x 15
+  gene_influence       1909 x 13
+
+Anchor gene lists validated against the matrix:
+  motility core present : 10/10
+        ADRA2A, CCDC25, ERBB4, LDB2, NEXN, PLEKHG3, RHOA, SPATA13, TENM2, TNR
+  drivers present       : 4/4
+        CACNB3, CD40, GCH1, GIGYF1
+  TRS candidates present: 7/7
+        AMIGO1, CDH10, CNTN1, GLI2, ITM2B, KCNQ2, ST8SIA2
+
+================================================================================
+1. THRESHOLD SENSITIVITY  (does the down≈up bidirectional split survive?)
+================================================================================
+  Down/up convergent counts across |Z| cutoffs:
+      zcut   down     up   ratio   mot_core_in_down
+      1.00    101    109    0.93                 10
+      1.64     65     65    1.00                 10
+      1.96     53     54    0.98                 10
+      2.58     36     37    0.97                  7
+      3.00     32     22    1.46                  7
+
+  ratio stable across 1.64-2.58 : True
+  motility core stays in down   : True
+  VERDICT bidirectional split   : PASS ✓
+  Read: if PASS, GO-concordance vs GO-enrichment disagreement is real, not a cutoff artefact.
+
+  TRS divergent-tail size across delta cutoffs:
+      dcut  n_tail    frac   trs_cand_kept
+      1.00     247   0.352               7
+      1.50     171   0.244               7
+      2.00     110   0.157               7
+      2.50      78   0.111               7
+      3.00      58   0.083               7
+  tail stays minority           : True
+  TRS candidates retained       : True
+  VERDICT 'same map + tail'     : PASS ✓
+  Tables: 41_threshold_sensitivity.csv, 41_trs_tail_sensitivity.csv
+
+================================================================================
+2. LEAVE-k-OUT ON MOTILITY CORE  (is the 88-robustness claim a 2-gene object?)
+================================================================================
+  Core genes tested       : 10
+  Baseline Stouffer SCZ   : -13.416
+  Baseline Stouffer TRS   : -15.011
+  Leave-2 min double-sig  : 8
+  Leave-2 Stouffer<-1.96  : True
+  VERDICT motility core   : PASS ✓
+  Read: PASS => genuine multi-gene negative block. FAIL => write it like GCH1 (single/2-gene).
+
+  Kinase (Ser/Thr) set with CD40 removed — the honest robustness of the kinase GO:
+    n_kinase=48  n_after_CD40=47
+    residual Stouffer SCZ=-5.575  TRS=-4.977  n_converge_down=7
+    VERDICT multi-gene kinase mechanism : PASS ✓
+    If FAIL: keep the set + CD40 footnote; do NOT call it a multi-gene kinase mechanism.
+  Tables: 42_motility_leavek.csv
+
+================================================================================
+3. DRIVER ABLATION  (what remains if CD40/GIGYF1/GCH1/CACNB3 vanish)
+================================================================================
+                subset     n  down   up  div  mot_core_left
+                   all   702    53   54   97             10
+           drop_CACNB3   701    52   54   97             10
+             drop_CD40   701    52   54   97             10
+             drop_GCH1   701    52   54   97             10
+           drop_GIGYF1   701    53   53   97             10
+      drop_all_drivers   698    50   53   97             10
+
+  motility survives full driver ablation : True
+  up-core fragile to driver removal      : False
+  Read: motility_core_left barely moving = robust. up collapsing = 'RTK-as-pathway' is not real.
+  Table: 43_driver_ablation.csv
+
+================================================================================
+4. CONCORDANCE ABLATION  ('same map, r~0.80' without the genes we interpret)
+================================================================================
+                    subset     n  pearson_r  sign_conc
+                       all   512      0.808      0.793
+                   no_hubs   494      0.804      0.789
+                   no_tail   434      0.906      0.850
+           no_hubs_no_tail   418      0.905      0.847
+                no_drivers   508      0.787      0.791
+    adhesion_synapse_no_tail    68      0.912      0.956
+      excitability_no_tail    39      0.946      0.821
+        metabolism_no_tail     2         NA         NA
+    migration_cytoskeleton_no_tail    94      0.888      0.883
+    neurite_development_no_tail   111      0.925      0.820
+             other_no_tail    14      0.765      0.857
+    signaling_plasticity_no_tail   106      0.902      0.792
+
+  r(all)=0.808  r(no hubs+no tail)=0.905
+  VERDICT 'TRS is the same architecture' : PASS ✓
+  Read: PASS => concordance is not a hub artefact and not defined by TRS-specific genes.
+  Table: 44_concordance_ablation.csv
+
+  Adhesion/neurite ΔZ carried by named candidates?
+    adhesion_like    cand_mean_delta=-4.090 (n=5)  rest_module_mean_delta=-0.248 (n=325)
+    kcnq2_only       cand_mean_delta=5.096 (n=1)  rest_module_mean_delta=-0.353 (n=329)
+  VERDICT adhesion shift = named gene list (not module) : PASS ✓
+  If PASS: report AMIGO1/CNTN1/CDH10/ST8SIA2/ITM2B as a list, not an adhesion-module TRS effect.
+  Table: 44_adhesion_ablation.csv
+
+================================================================================
+5. MOTILITY-CORE SIGN STABILITY + BOOTSTRAP r (cohort-choice surrogate)
+================================================================================
+  n_core                 : 10
+  all genes same sign    : True
+  min |Z| in either cohort: 2.061
+  core r bootstrap 95%   : [0.460, 0.964] (median 0.828)
+  VERDICT tight shared ranking inside core : PASS ✓
+  Read: CI excluding 0 => shared ranking. CI spanning 0 => negative block but not tight ranking
+        (still supports the GO claim; weakens 'shared architecture' INSIDE motility).
+  Table: 45_motility_sign_stability.csv
+
+================================================================================
+6. SET-COMPOSITION CONTROL  (motility != kinase genes re-annotated)
+================================================================================
+  n motility=171  n kinase=272  overlap=46
+  motility-ONLY Stouffer SCZ=-0.236  TRS=-2.224
+  VERDICT motility independent of kinase set : FAIL ✗
+  Overlap genes that are converge_down (belong in diagram once, not double-counted):
+        ADRA2A, ERBB4, PIK3R1, RHOA
+  Table: 46_motility_kinase_overlap.csv
+
+================================================================================
+7. ROBUSTNESS LEDGER  (supplement one-pager)
+================================================================================
+  • motility multi-gene core
+      test    : 4.2 leave-2 + 4.6 mot-only + 4.3 ablation
+      verdict : PASS
+      rule    : core double-sig after leave-2, mot-only Stouffer<-1.5, survives driver ablation
+  • kinase set minus CD40
+      test    : 4.2 residual
+      verdict : PASS
+      rule    : residual |Stouffer|>=2 without CD40 else set+footnote only
+  • bidirectional down~=up split
+      test    : 4.1 zcut grid
+      verdict : PASS
+      rule    : down/up ratio in 0.5-2 across 1.64-2.58
+  • TRS = same map + minority tail
+      test    : 4.1 tail grid + 4.4
+      verdict : PASS
+      rule    : tail<50% & r>=0.75 after dropping hubs+tail
+  • adhesion/neurite TRS shift
+      test    : 4.4 adhesion ablation
+      verdict : PASS
+      rule    : if shift=named list, report genes not module
+  • motility-core tight ranking
+      test    : 4.5 bootstrap
+      verdict : PASS
+      rule    : core r CI excludes 0 (else negative block, not shared ranking)
+  • motility != kinase re-annotation
+      test    : 4.6 overlap
+      verdict : FAIL
+      rule    : motility-only Stouffer stays negative
+  • KCNQ2/KCNN3 split
+      test    : single-gene; untestable here
+      verdict : NA
+      rule    : remains hypothesis; robustness cap ~60
+  • GCH1 / pteridine
+      test    : 4.3 drop GCH1
+      verdict : NA
+      rule    : metabolism class should vanish without GCH1
+  • cascade / psychedelic reversal
+      test    : untestable on these CSVs
+      verdict : NA
+      rule    : leave robustness 15-32; do not add a figure
+  Table: 47_robustness_ledger.csv
+
+================================================================================
+8. WHAT STAGE 4 CANNOT MOVE (leave scores low on purpose)
+================================================================================
+  These are NOT testable on the pipeline CSVs and must NOT get a new figure here:
+    - enhancer-to-gene linkage (needs enhancer-promoter maps)
+    - cell-type attribution (needs single-cell / sorted expression)
+    - psychedelic direction / therapeutic reversal (needs directional expression)
+    - 'TRS mechanism' vs chronicity/drug-exposure/ascertainment confounds
+  Anything requiring a 3rd GWAS, MAGMA gene-size/constraint covariates, or
+  enhancer-promoter maps is STAGE 5, not Stage 4.
+
+================================================================================
+9. FOUR SENTENCES TO WRITE (each tied to a table)
+================================================================================
+  1) Motility core remains a double-cohort negative block after leave-2-out (42),
+     after removing kinase-overlapping genes (46), and after deleting drivers (43).
+  2) Down-core and up-core stay co-equal across Z cutoffs (41) — why GO concordance
+     and GO enrichment disagree.
+  3) Cross-cohort r stays high after removing hubs and the divergent tail (44);
+     TRS is not defined by the genes that differ.
+  4) The adhesion/neurite TRS shift shrinks to a named gene list if it vanishes
+     after dropping AMIGO1/CNTN1/CDH10/ST8SIA2/ITM2B (44). KCNQ2 vs KCNN3 not promoted.
+
+================================================================================
+11. OUTPUT FILES
+================================================================================
+  /content/091IvD_results/stage4/41_threshold_sensitivity.csv  (0 KB)
+  /content/091IvD_results/stage4/41_trs_tail_sensitivity.csv  (0 KB)
+  /content/091IvD_results/stage4/42_motility_leavek.csv  (2 KB)
+  /content/091IvD_results/stage4/43_driver_ablation.csv  (0 KB)
+  /content/091IvD_results/stage4/44_adhesion_ablation.csv  (0 KB)
+  /content/091IvD_results/stage4/44_concordance_ablation.csv  (0 KB)
+  /content/091IvD_results/stage4/45_motility_sign_stability.csv  (0 KB)
+  /content/091IvD_results/stage4/46_motility_kinase_overlap.csv  (0 KB)
+  /content/091IvD_results/stage4/47_robustness_ledger.csv  (1 KB)
+
+================================================================================
+END OF STAGE 4 SUMMARY
+================================================================================

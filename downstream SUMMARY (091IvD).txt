@@ -1,0 +1,265 @@
+================================================================================
+091IvD DOWNSTREAM — CONSOLIDATED DETAILED SUMMARY
+CSV-only re-analysis of persistent-enhancer TWAS results (TRS vs SCZ-EUR)
+================================================================================
+Generated        : 2026-09-04 11:43:17
+Results dir      : /content/091IvD_results
+Output dir       : /content/091IvD_results/downstream
+
+Input tables loaded (rows x cols):
+  enrichment              462 x 22
+  pairwise                 33 x 62
+  gene_influence         1909 x 14
+  family_wise_fdr         616 x 7
+  proximity                33 x 12
+
+================================================================================
+1. CONSERVATIVE ENRICHMENT LEADERBOARD (CI excludes 0 + permutation FDR)
+================================================================================
+  Leaderboard rows                : 66
+  Rows with CI excluding 0        : 9
+  SURVIVORS (CI≠0 AND perm p<0.05) : 5
+
+  • REGULATION_OF_CELL_MOTILITY_GO_2000145  [scz_eur]
+        n=32  Stouffer_Z=-8.117  CI=[-13.300, -3.064]  perm_p=0.008  wilcox_p=0.004
+  • POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_  [scz_eur]
+        n=27  Stouffer_Z=-7.781  CI=[-13.533, -2.401]  perm_p=0.010  wilcox_p=0.028
+  • REGULATION_OF_CELL_MOTILITY_GO_2000145  [trs]
+        n=33  Stouffer_Z=-7.109  CI=[-12.573, -1.873]  perm_p=0.015  wilcox_p=0.023
+  • POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_  [trs]
+        n=27  Stouffer_Z=-7.036  CI=[-12.033, -2.518]  perm_p=0.016  wilcox_p=0.016
+  • PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042  [scz_eur]
+        n=5  Stouffer_Z=-6.794  CI=[-14.878, -1.102]  perm_p=0.027  wilcox_p=nan
+
+================================================================================
+2. SHARED-PROFILE vs MEAN-SHIFT MAP
+================================================================================
+  X axis (concordance)   : Lin_CCC
+  Y axis (mean shift)    : mean_diff
+  Shared-program sets (x>= 0.5, |y|<0.5) : 26
+  Examples of shared-program sets:
+        SYNAPSE_ORGANIZATION_GO_0050808, NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399,
+        POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANIZATION_GO_0031346,
+        NEURON_PROJECTION_MORPHOGENESIS_GO_0048812,
+        POSITIVE_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT_GO_0010976,
+        EPITHELIAL_CELL_MIGRATION_GO_0010631, REGULATION_OF_CELL_MIGRATION_GO_0030334,
+        CELL_JUNCTION_ASSEMBLY_GO_0034329, SYNAPTIC_MEMBRANE_ADHESION_GO_0099560,
+        SYNAPSE_ASSEMBLY_GO_0007416, LIMB_DEVELOPMENT_GO_0060173,
+        REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901,
+        POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902,
+        POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597,
+        POTASSIUM_ION_TRANSPORT_GO_0006813
+
+  Largest TRS−SCZ mean shifts (labelled on figure):
+    PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042 x=0.526  y(shift)=1.452
+    DNA_CONFORMATION_CHANGE_GO_0071103                      x=0.392  y(shift)=1.076
+    CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_G x=0.800  y(shift)=-0.983
+    REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DI x=0.236  y(shift)=0.635
+    CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECUL x=0.730  y(shift)=-0.605
+    AXONOGENESIS_GO_0007409                                 x=0.753  y(shift)=-0.602
+    HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_M x=0.820  y(shift)=-0.597
+    NEGATIVE_REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCL x=0.837  y(shift)=0.497
+  Figure: figures/02_concordance_vs_shift.png
+
+================================================================================
+3. TISSUE CONSISTENCY OF FOCUS (FDR-SURVIVING) SETS
+================================================================================
+  Focus sets:
+        REGULATION_OF_CELL_MOTILITY_GO_2000145,
+        POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902,
+        PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558
+
+  Fraction of tissues sharing the sign of the median Stouffer:
+    POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONI scz_eur    frac_same_sign=1.000  (n_tissues=6)
+    POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONI trs        frac_same_sign=1.000  (n_tissues=6)
+    PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCE scz_eur    frac_same_sign=1.000  (n_tissues=6)
+    PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCE trs        frac_same_sign=1.000  (n_tissues=6)
+    REGULATION_OF_CELL_MOTILITY_GO_2000145        scz_eur    frac_same_sign=1.000  (n_tissues=6)
+    REGULATION_OF_CELL_MOTILITY_GO_2000145        trs        frac_same_sign=1.000  (n_tissues=6)
+  Tables: 03_tissue_stouffer_focus_sets.csv, 03_tissue_sign_consistency.csv
+
+================================================================================
+4. INFLUENCE-ROBUST STOUFFER (jackknife of Influential genes)
+================================================================================
+  Set×disease pairs tested        : 66
+  Survive drop (|Z|>=1.96, no flip) : 14
+  Fragile (flip or |Z|<1.96)       : 39
+
+  ROBUST SURVIVORS (headline holds after dropping influential genes):
+    REGULATION_OF_CELL_MOTILITY_GO_2000145        [scz_eur] Z_all=-8.096 -> Z_robust=-8.096 (dropped 0)
+    REGULATION_OF_CELL_MOTILITY_GO_2000145        [trs] Z_all=-7.106 -> Z_robust=-7.106 (dropped 0)
+    POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONI [scz_eur] Z_all=-8.098 -> Z_robust=-5.832 (dropped 1)
+    POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONI [trs] Z_all=-7.224 -> Z_robust=-5.602 (dropped 1)
+    POTASSIUM_ION_TRANSPORT_GO_0006813            [trs] Z_all=3.127 -> Z_robust=3.928 (dropped 6)
+    NEURON_PROJECTION_MORPHOGENESIS_GO_0048812    [scz_eur] Z_all=3.543 -> Z_robust=3.478 (dropped 4)
+    CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERE [scz_eur] Z_all=4.020 -> Z_robust=3.389 (dropped 5)
+    TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINAS [trs] Z_all=2.539 -> Z_robust=2.777 (dropped 8)
+    PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCE [scz_eur] Z_all=-6.901 -> Z_robust=-2.763 (dropped 1)
+    NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399         [scz_eur] Z_all=3.371 -> Z_robust=2.433 (dropped 5)
+    POSITIVE_REGULATION_OF_NERVOUS_SYSTEM_DEVELOP [scz_eur] Z_all=2.399 -> Z_robust=2.375 (dropped 2)
+    BLOOD_VESSEL_MORPHOGENESIS_GO_0048514         [trs] Z_all=-2.858 -> Z_robust=-2.222 (dropped 3)
+    PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCE [trs] Z_all=-4.372 -> Z_robust=-2.191 (dropped 1)
+    EPITHELIAL_TUBE_MORPHOGENESIS_GO_0060562      [trs] Z_all=-3.339 -> Z_robust=-2.162 (dropped 1)
+
+  MOST FRAGILE (claim dies once influential genes removed):
+    NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399         [trs] Z_all=-0.183 -> Z_robust=0.099 n_infl=81 [SIGN FLIP]
+    REGULATION_OF_CELL_MIGRATION_GO_0030334       [scz_eur] Z_all=0.388 -> Z_robust=0.346 n_infl=74 [drops<1.96]
+    TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINAS [scz_eur] Z_all=0.576 -> Z_robust=-0.664 n_infl=46 [SIGN FLIP]
+    POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_G [scz_eur] Z_all=0.764 -> Z_robust=1.477 n_infl=37 [drops<1.96]
+    POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANI [trs] Z_all=0.169 -> Z_robust=0.226 n_infl=36 [drops<1.96]
+    ADENYLATE_CYCLASE_MODULATING_G_PROTEIN_COUPLE [scz_eur] Z_all=0.273 -> Z_robust=-0.137 n_infl=32 [SIGN FLIP]
+    ADENYLATE_CYCLASE_MODULATING_G_PROTEIN_COUPLE [trs] Z_all=-0.501 -> Z_robust=-0.104 n_infl=29 [drops<1.96]
+    POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_G [trs] Z_all=-1.005 -> Z_robust=-1.163 n_infl=26 [drops<1.96]
+    SYNAPSE_ORGANIZATION_GO_0050808               [scz_eur] Z_all=1.212 -> Z_robust=0.123 n_infl=24 [drops<1.96]
+    CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_ [trs] Z_all=0.804 -> Z_robust=0.367 n_infl=21 [drops<1.96]
+    SYNAPSE_ORGANIZATION_GO_0050808               [trs] Z_all=-1.110 -> Z_robust=-0.000874 n_infl=21 [drops<1.96]
+    CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESI [scz_eur] Z_all=1.160 -> Z_robust=0.821 n_infl=20 [drops<1.96]
+    POSITIVE_REGULATION_OF_NEURON_PROJECTION_DEVE [trs] Z_all=0.737 -> Z_robust=-0.106 n_infl=18 [SIGN FLIP]
+    POTASSIUM_ION_TRANSPORT_GO_0006813            [scz_eur] Z_all=1.062 -> Z_robust=-0.043 n_infl=17 [SIGN FLIP]
+    CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_ [scz_eur] Z_all=-1.510 -> Z_robust=0.110 n_infl=16 [SIGN FLIP]
+  Table: 04_influence_robust_stouffer.csv
+
+================================================================================
+5. CROSS-SET DRIVER CENSUS (genes recycled across GO labels)
+================================================================================
+  Top drivers by number of gene sets they appear in:
+    POU4F1             [trs]       n_sets=  8  mean|Z|=4.815
+        sets: AXONOGENESIS_GO_0007409; CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_GO_0071407; CELL_JUNCTION_ASSEMBLY_GO_0034329; CEL
+    GPM6A              [trs]       n_sets=  7  mean|Z|=4.664
+        sets: CELL_JUNCTION_ASSEMBLY_GO_0034329; NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399; NEURON_PROJECTION_MORPHOGENESIS_GO_0048812; PO
+    POU4F1             [scz_eur]   n_sets=  6  mean|Z|=3.072
+        sets: AXONOGENESIS_GO_0007409; CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_GO_0071407; CELL_JUNCTION_ASSEMBLY_GO_0034329; CEL
+    PTPRD              [scz_eur]   n_sets=  6  mean|Z|=2.064
+        sets: CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742; POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANIZATIO
+    SHH                [trs]       n_sets=  5  mean|Z|=4.072
+        sets: AXONOGENESIS_GO_0007409; BLOOD_VESSEL_MORPHOGENESIS_GO_0048514; EPITHELIAL_TUBE_MORPHOGENESIS_GO_0060562; NERVOUS_SYSTEM
+    NLGN1              [trs]       n_sets=  5  mean|Z|=0.491
+        sets: NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399; POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANIZATION_GO_0031346; POSITIVE_REGULATI
+    SDK2               [scz_eur]   n_sets=  5  mean|Z|=1.999
+        sets: CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742; CELL_JUNCTION_ASSEMBLY_GO_0034329; HOMOPHILIC_CELL
+    PCDHB6             [scz_eur]   n_sets=  5  mean|Z|=2.138
+        sets: CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742; CELL_JUNCTION_ASSEMBLY_GO_0034329; HOMOPHILIC_CELL
+    GPM6A              [scz_eur]   n_sets=  5  mean|Z|=4.274
+        sets: CELL_JUNCTION_ASSEMBLY_GO_0034329; POSITIVE_REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051491; REGULATION_OF_FILOPODIUM_ASSEM
+    ADGRL3             [scz_eur]   n_sets=  5  mean|Z|=1.969
+        sets: ADENYLATE_CYCLASE_MODULATING_G_PROTEIN_COUPLED_RECEPTOR_SIGNALING_PATHWAY_GO_0007188; CELL_CELL_ADHESION_VIA_PLASMA_MEMB
+    PLXND1             [trs]       n_sets=  5  mean|Z|=1.535
+        sets: EPITHELIAL_CELL_MIGRATION_GO_0010631; NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399; POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGA
+    NTNG1              [trs]       n_sets=  4  mean|Z|=2.386
+        sets: CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667; NEURON_PROJECTION_MORPHOGENESIS_GO_0048812; SYNAPSE_OR
+    NEXN               [scz_eur]   n_sets=  4  mean|Z|=4.258
+        sets: AXONOGENESIS_GO_0007409; CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742; HOMOPHILIC_CELL_ADHESION_
+    RHOA               [trs]       n_sets=  4  mean|Z|=4.776
+        sets: CELL_JUNCTION_ASSEMBLY_GO_0034329; EPITHELIAL_CELL_MIGRATION_GO_0010631; POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_
+    RAPGEF2            [trs]       n_sets=  4  mean|Z|=2.416
+        sets: CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_GO_0071407; POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597; POSITIV
+    PTN                [trs]       n_sets=  4  mean|Z|=2.912
+        sets: NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399; POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597; POSITIVE_REGULATION_OF_CE
+    PCDHB6             [trs]       n_sets=  4  mean|Z|=1.998
+        sets: HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156; NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399; SYNAP
+    NEXN               [trs]       n_sets=  4  mean|Z|=4.734
+        sets: AXONOGENESIS_GO_0007409; CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742; HOMOPHILIC_CELL_ADHESION_
+    LRP4               [trs]       n_sets=  4  mean|Z|=4.999
+        sets: CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667; LIMB_DEVELOPMENT_GO_0060173; NEURON_PROJECTION_MORPHOG
+    DVL1               [trs]       n_sets=  4  mean|Z|=1.123
+        sets: CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667; NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399; POSITIVE_REGULA
+  Tables: 05_driver_census.csv, 05_driver_incidence.csv
+
+================================================================================
+6. SIGNED TWO-COHORT STOUFFER SCATTER (set-level)
+================================================================================
+  Axes: x=scz_eur  y=trs
+  Down in BOTH cohorts : 8
+        BLOOD_VESSEL_MORPHOGENESIS_GO_0048514, CELL_JUNCTION_ASSEMBLY_GO_0034329,
+        DNA_CONFORMATION_CHANGE_GO_0071103, EPITHELIAL_CELL_MIGRATION_GO_0010631,
+        EPITHELIAL_TUBE_MORPHOGENESIS_GO_0060562,
+        POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902,
+        PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558,
+        REGULATION_OF_CELL_MOTILITY_GO_2000145
+  Up in BOTH cohorts   : 9
+        LIMB_DEVELOPMENT_GO_0060173, NEURON_PROJECTION_MORPHOGENESIS_GO_0048812,
+        POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANIZATION_GO_0031346,
+        POSITIVE_REGULATION_OF_NERVOUS_SYSTEM_DEVELOPMENT_GO_0051962,
+        POTASSIUM_ION_TRANSPORT_GO_0006813,
+        REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901,
+        REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905063,
+        SYNAPSE_ASSEMBLY_GO_0007416, SYNAPTIC_TRANSMISSION_GABAERGIC_GO_0051932
+  Off-diagonal (differential TRS vs SCZ) : 16
+        ADENYLATE_CYCLASE_MODULATING_G_PROTEIN_COUPLED_RECEPTOR_SIGNALING_PATHWAY_GO_00071
+        88, AXONOGENESIS_GO_0007409,
+        CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_GO_0071407,
+        CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742,
+        CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667,
+        HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156, NEGATI
+        VE_REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905064
+        , NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399,
+        POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597,
+        POSITIVE_REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051491,
+        POSITIVE_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT_GO_0010976,
+        REGULATION_OF_CELL_MIGRATION_GO_0030334,
+        REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051489, SYNAPSE_ORGANIZATION_GO_0050808,
+        SYNAPTIC_MEMBRANE_ADHESION_GO_0099560,
+        TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINASE_SIGNALING_PATHWAY_GO_0007169
+  Figure: figures/06_stouffer_trs_vs_scz.png  |  Table: 06_stouffer_trs_vs_scz.csv
+
+================================================================================
+7. FAMILY-WISE FDR SLICED BY TEST FAMILY
+================================================================================
+  Total family-wise FDR<0.05 hits : 107
+  Of which enrichment (perm/wilcox): 9
+
+  Hits by test family (Source/Test):
+    proximity/Spearman_p                                       26
+    proximity/Pearson_p                                        26
+    pairwise_stats/Kendall_p                                   25
+    pairwise_stats/sign_concordance_p                          20
+    enrichment/permutation_p                                    4
+    enrichment/wilcoxon_p                                       2
+    differential/Paired_Wilcoxon_p                              1
+    pairwise_stats/Paired_Wilcoxon_p                            1
+    pairwise_stats/Paired_t_p                                   1
+    pairwise_stats/Permutation_p                                1
+  Tables: 07_fdr_by_test_family.csv, 07_fdr_enrichment_only.csv
+  CAUTION: most FDR hits are proximity/concordance, not enrichment —
+           do not report the total as N independent enrichment findings.
+
+================================================================================
+8. PUBLICATION-SCALE COMPACT TABLE
+================================================================================
+  Rows (gene sets) : 33
+  Columns          : 15
+        GeneSet, n_genes_found_scz_eur, n_genes_found_trs, permutation_p_scz_eur,
+        permutation_p_trs, stouffer_z_scz_eur, stouffer_z_trs, n_genes_paired, mean_diff,
+        Cohens_d_paired, Lin_CCC, sign_concordance_rate, Kendall_tau, Pearson_r,
+        Spearman_rho
+  Table: 08_publication_table.csv
+
+================================================================================
+9. RECOMMENDED REPORTING GATE
+================================================================================
+  Report a GO-level claim only if the set:
+    (a) survives the conservative leaderboard (§1: CI excludes 0 AND perm p<0.05),
+    (b) stays signed with |Stouffer|>=1.96 after dropping Influential genes (§4),
+    (c) is not carried by a single recycled driver in §5.
+  Otherwise treat it as a two-gene / driver-level observation, not a pathway result.
+
+================================================================================
+11. OUTPUT FILES
+================================================================================
+  /content/091IvD_results/downstream/01_enrichment_leaderboard.csv  (18 KB)
+  /content/091IvD_results/downstream/02_concordance_vs_shift.csv  (19 KB)
+  /content/091IvD_results/downstream/03_tissue_sign_consistency.csv  (0 KB)
+  /content/091IvD_results/downstream/03_tissue_stouffer_focus_sets.csv  (1 KB)
+  /content/091IvD_results/downstream/04_influence_robust_stouffer.csv  (8 KB)
+  /content/091IvD_results/downstream/05_driver_census.csv  (58 KB)
+  /content/091IvD_results/downstream/05_driver_incidence.csv  (28 KB)
+  /content/091IvD_results/downstream/06_stouffer_trs_vs_scz.csv  (2 KB)
+  /content/091IvD_results/downstream/07_fdr_by_test_family.csv  (0 KB)
+  /content/091IvD_results/downstream/07_fdr_enrichment_only.csv  (2 KB)
+  /content/091IvD_results/downstream/08_publication_table.csv  (4 KB)
+  /content/091IvD_results/downstream/figures/02_concordance_vs_shift.png  (129 KB)
+  /content/091IvD_results/downstream/figures/06_stouffer_trs_vs_scz.png  (93 KB)
+
+================================================================================
+END OF SUMMARY
+================================================================================

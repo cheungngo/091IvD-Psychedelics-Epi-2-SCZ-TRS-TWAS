@@ -1,0 +1,332 @@
+================================================================================
+091IvD  STAGE 3  —  GENE-LEVEL CONVERGENCE / DIVERGENCE SUMMARY
+The unit of discovery is the GENE, not the GO label.
+================================================================================
+Generated   : 2026-09-04 16:29:28
+Results dir : /content/091IvD_results
+Output dir  : /content/091IvD_results/stage3
+Cohorts     : TRS='trs'  vs  SCZ='scz_eur'
+             (columns Z_trs / Z_scz_eur)
+
+Input tables (rows x cols):
+  gene_detail        1301 x 7
+  gene_influence     1909 x 13
+
+Classification thresholds:
+  converge : same sign AND both |Z| > 1.96
+  diverge_sign  : opposite sign AND min|Z| > 1.0
+  diverge_shift : |Z_TRS - Z_SCZ| > 2.0
+
+================================================================================
+1. GENE CLASS OVERVIEW
+================================================================================
+  Total unique genes: 702
+    converge_down   :    53  ( 7.5%)
+    converge_up     :    54  ( 7.7%)
+    diverge_sign    :    37  ( 5.3%)
+    diverge_shift   :    60  ( 8.5%)
+    weak            :   498  (70.9%)
+
+  Interpretation:
+    converge_down = gene-level content of the motility / kinase GO claims
+                    (report as NEGATIVE aggregate TWAS association).
+    converge_up   = weaker shared developmental / synaptic tail.
+    diverge_*     = the ONLY genes that can support a TRS-vs-SCZ sentence.
+
+================================================================================
+2. CONVERGENT DOWN CORE  (shared negative TWAS Z, both cohorts)
+================================================================================
+  53 genes. Top 25 by shared negative Z:
+
+    GENE               Z_scz_eu      Z_trs    delta  modules
+    CD40                -12.342     -8.975    3.367  signaling_plasticity
+    TNR                  -8.070     -7.584    0.487  migration_cytoskeleton;neurite_development
+    KCNN3                -7.356     -7.903   -0.546  excitability
+    LIMK1                -7.929     -7.201    0.728  neurite_development
+    CACNB3               -8.287     -6.575    1.712  adhesion_synapse
+    GCH1                 -9.905     -4.950    4.955  metabolism
+    SERPINI1             -7.836     -6.726    1.109  neurite_development
+    CCDC25               -5.815     -7.016   -1.201  migration_cytoskeleton
+    ANGPT1               -6.020     -6.292   -0.272  signaling_plasticity
+    CFTR                 -7.727     -4.173    3.553  signaling_plasticity
+    RHOA                 -5.874     -4.776    1.098  adhesion_synapse;migration_cytoskeleton;sign
+    CAST                 -4.816     -5.559   -0.744  adhesion_synapse
+    TENM2                -3.416     -6.212   -2.796  adhesion_synapse;migration_cytoskeleton
+    MEF2A                -5.660     -3.801    1.859  neurite_development
+    ERBB4                -3.957     -5.388   -1.431  migration_cytoskeleton;neurite_development;s
+    ARID1B               -4.311     -4.757   -0.445  signaling_plasticity
+    HCN3                 -4.127     -4.931   -0.805  excitability;signaling_plasticity
+    NEXN                 -4.258     -4.734   -0.476  adhesion_synapse;migration_cytoskeleton;neur
+    CNTFR                -3.931     -4.685   -0.754  neurite_development
+    MTERF1               -6.072     -2.013    4.059  other
+    DIRAS2               -4.049     -3.925    0.125  signaling_plasticity
+    ADRA2A               -3.844     -4.107   -0.263  migration_cytoskeleton;signaling_plasticity
+    MAPRE3               -4.105     -3.786    0.318  signaling_plasticity
+    POU4F1               -3.072     -4.815   -1.743  adhesion_synapse;neurite_development;signali
+    LNPK                 -3.906     -3.762    0.144  neurite_development
+  Table: 33_converge_down.csv
+
+================================================================================
+3. CONVERGENT UP CORE  (shared positive TWAS Z, both cohorts)
+================================================================================
+  54 genes. Top 15:
+
+    GIGYF1           Z_scz_e=13.589 Z_trs=12.039  modules=signaling_plasticity
+    PLEKHG4          Z_scz_e=8.156 Z_trs=6.288  modules=neurite_development
+    LY6H             Z_scz_e=8.473 Z_trs=5.904  modules=neurite_development
+    ZIC1             Z_scz_e=7.558 Z_trs=6.179  modules=neurite_development
+    KIF20B           Z_scz_e=6.846 Z_trs=6.192  modules=neurite_development
+    UNC119B          Z_scz_e=5.611 Z_trs=6.866  modules=neurite_development
+    ABCC8            Z_scz_e=6.098 Z_trs=5.481  modules=excitability
+    GABRA5           Z_scz_e=6.077 Z_trs=5.474  modules=excitability
+    FAM110C          Z_scz_e=5.760 Z_trs=5.438  modules=migration_cytoskeleton
+    FUT9             Z_scz_e=5.773 Z_trs=5.197  modules=neurite_development
+    LRP4             Z_scz_e=5.620 Z_trs=4.999  modules=adhesion_synapse;neurite_development
+    MMP9             Z_scz_e=3.318 Z_trs=6.895  modules=signaling_plasticity
+    SH2B2            Z_scz_e=4.180 Z_trs=5.401  modules=signaling_plasticity
+    CXADR            Z_scz_e=3.943 Z_trs=5.485  modules=adhesion_synapse;excitability
+    CYP1A1           Z_scz_e=2.521 Z_trs=6.494  modules=signaling_plasticity
+  Table: 33_converge_up.csv
+
+================================================================================
+4. DIVERGENT TAIL  (TRS-specific hypotheses ONLY)
+================================================================================
+  97 genes (sign flip or |delta Z| > 2.0). Top 20 by |delta|:
+
+    GENE             class            Z_scz_e     Z_trs    delta  modules
+    AMIGO1           diverge_shift      0.920    -4.847   -5.767  adhesion_synapse;neurite_developme
+    KCNQ2            diverge_shift     -0.996     4.099    5.095  excitability;neurite_development
+    BCAR3            diverge_sign      -2.884     2.002    4.886  signaling_plasticity
+    AQP9             diverge_sign       2.883    -1.647   -4.530  signaling_plasticity
+    HMGB2            diverge_shift     -0.921     3.341    4.262  other
+    MAPKAPK3         diverge_sign      -1.121     2.913    4.034  signaling_plasticity
+    CNTN1            diverge_sign       2.164    -1.731   -3.895  migration_cytoskeleton;neurite_dev
+    DUOX1            diverge_shift     -0.774     3.106    3.880  migration_cytoskeleton
+    MAP2K5           diverge_shift     -5.017    -1.220    3.797  signaling_plasticity
+    ITM2B            diverge_shift     -0.436    -4.215   -3.779  neurite_development
+    ADAM17           diverge_shift      0.131     3.904    3.773  migration_cytoskeleton
+    TOX              diverge_shift      0.142     3.791    3.649  neurite_development
+    ST8SIA2          diverge_sign       2.090    -1.544   -3.635  neurite_development
+    GLI2             diverge_sign       1.484    -2.141   -3.625  neurite_development
+    PTH2R            diverge_sign      -2.072     1.433    3.506  signaling_plasticity
+    SLC6A6           diverge_sign       2.161    -1.273   -3.434  signaling_plasticity
+    CDH10            diverge_sign       1.457    -1.919   -3.376  adhesion_synapse
+    EPHA8            diverge_sign      -2.068     1.307    3.375  neurite_development;signaling_plas
+    ZAP70            diverge_shift     -1.619    -4.934   -3.315  signaling_plasticity
+    PRKG2            diverge_shift     -3.857    -0.615    3.242  metabolism
+
+  CAUTION: keep the three confounders in every TRS sentence —
+           chronicity, cumulative drug exposure, ascertainment.
+           These are TRS HYPOTHESES, not TRS mechanisms.
+  Table: 33_diverge.csv
+
+================================================================================
+5. CROSS-LAYER HUB GENES  (>=3 modules — wiring-diagram nodes)
+================================================================================
+  30 hub genes. These belong in the DIAGRAM, not as extra GO hits:
+
+    ROBO1            n_modules=4 n_sets=6  Z_scz_e=NA Z_trs=NA [weak]
+        modules: adhesion_synapse;migration_cytoskeleton;neurite_development;signaling_plasticity
+    TENM1            n_modules=4 n_sets=5  Z_scz_e=NA Z_trs=NA [weak]
+        modules: adhesion_synapse;migration_cytoskeleton;neurite_development;signaling_plasticity
+    NLGN1            n_modules=3 n_sets=11  Z_scz_e=NA Z_trs=0.491 [weak]
+        modules: adhesion_synapse;migration_cytoskeleton;neurite_development
+    NRCAM            n_modules=3 n_sets=8  Z_scz_e=NA Z_trs=NA [weak]
+        modules: adhesion_synapse;neurite_development;signaling_plasticity
+    PLXND1           n_modules=3 n_sets=8  Z_scz_e=0.444 Z_trs=1.535 [weak]
+        modules: adhesion_synapse;migration_cytoskeleton;neurite_development
+    POU4F1           n_modules=3 n_sets=8  Z_scz_e=-3.072 Z_trs=-4.815 [converge_down]
+        modules: adhesion_synapse;neurite_development;signaling_plasticity
+    GPM6A            n_modules=3 n_sets=7  Z_scz_e=4.274 Z_trs=4.664 [converge_up]
+        modules: adhesion_synapse;migration_cytoskeleton;neurite_development
+    NTNG1            n_modules=3 n_sets=7  Z_scz_e=-1.208 Z_trs=-2.386 [weak]
+        modules: adhesion_synapse;migration_cytoskeleton;neurite_development
+    ADGRL3           n_modules=3 n_sets=6  Z_scz_e=-1.969 Z_trs=-1.706 [weak]
+        modules: adhesion_synapse;neurite_development;signaling_plasticity
+    CDC42            n_modules=3 n_sets=6  Z_scz_e=1.076 Z_trs=1.316 [weak]
+        modules: adhesion_synapse;migration_cytoskeleton;neurite_development
+    PARD6B           n_modules=3 n_sets=6  Z_scz_e=-2.533 Z_trs=-1.242 [weak]
+        modules: adhesion_synapse;migration_cytoskeleton;neurite_development
+    RHOA             n_modules=3 n_sets=6  Z_scz_e=-5.874 Z_trs=-4.776 [converge_down]
+        modules: adhesion_synapse;migration_cytoskeleton;signaling_plasticity
+    CEACAM1          n_modules=3 n_sets=5  Z_scz_e=NA Z_trs=0.530 [weak]
+        modules: adhesion_synapse;migration_cytoskeleton;signaling_plasticity
+    NEXN             n_modules=3 n_sets=5  Z_scz_e=-4.258 Z_trs=-4.734 [converge_down]
+        modules: adhesion_synapse;migration_cytoskeleton;neurite_development
+    NTF3             n_modules=3 n_sets=5  Z_scz_e=2.703 Z_trs=-0.258 [diverge_shift]
+        modules: migration_cytoskeleton;neurite_development;signaling_plasticity
+    PAK3             n_modules=3 n_sets=5  Z_scz_e=NA Z_trs=NA [weak]
+        modules: adhesion_synapse;neurite_development;signaling_plasticity
+    PKD2             n_modules=3 n_sets=5  Z_scz_e=1.842 Z_trs=0.915 [weak]
+        modules: excitability;neurite_development;signaling_plasticity
+    PLXNB3           n_modules=3 n_sets=5  Z_scz_e=NA Z_trs=NA [weak]
+        modules: adhesion_synapse;migration_cytoskeleton;neurite_development
+    SPOCK2           n_modules=3 n_sets=5  Z_scz_e=-0.265 Z_trs=-1.448 [weak]
+        modules: adhesion_synapse;migration_cytoskeleton;neurite_development
+    ERBB4            n_modules=3 n_sets=4  Z_scz_e=-3.957 Z_trs=-5.388 [converge_down]
+        modules: migration_cytoskeleton;neurite_development;signaling_plasticity
+  Tables: 34_layer_hubs.csv, 34_gene_by_module.csv
+
+================================================================================
+6. WITHIN-MODULE CONCORDANCE vs MEAN SHIFT
+================================================================================
+  Gene-level 'shared profile, rare mean shift', per module:
+
+    module                      n_gene       r  sign_conc   mean_dZ(TRS-SCZ)   mean_Z
+    excitability                    49   0.854      0.755              0.088    0.488
+    adhesion_synapse               145   0.839      0.917             -0.462   -0.060
+    migration_cytoskeleton         172   0.820      0.872             -0.091   -0.333
+    neurite_development            273   0.814      0.777             -0.365    0.194
+    signaling_plasticity           220   0.798      0.759              0.079   -0.134
+
+  Read: high r + high sign_conc = shared architecture (not a 2nd enrichment).
+        the module with the most negative mean_dZ carries the TRS shift.
+  Table: 35_module_concordance.csv
+
+================================================================================
+7. ANCHOR-SET GENE TABLE  (the only gene table for the GO-level claim)
+================================================================================
+  81 genes across the two anchor sets (motility + Ser/Thr kinase).
+  Influence flags present: ['influential_scz_eur', 'influential_trs']
+
+    CD40             Z_scz_e=-12.342 Z_trs=-8.975 [converge_down] [INFL:scz_eur] [INFL:trs]
+    TNR              Z_scz_e=-8.070 Z_trs=-7.584 [converge_down]
+    CCDC25           Z_scz_e=-5.815 Z_trs=-7.016 [converge_down]
+    RHOA             Z_scz_e=-5.874 Z_trs=-4.776 [converge_down]
+    ERBB4            Z_scz_e=-3.957 Z_trs=-5.388 [converge_down]
+    NEXN             Z_scz_e=-4.258 Z_trs=-4.734 [converge_down]
+    DIRAS2           Z_scz_e=-4.049 Z_trs=-3.925 [converge_down]
+    ADRA2A           Z_scz_e=-3.844 Z_trs=-4.107 [converge_down]
+    MAPRE3           Z_scz_e=-4.105 Z_trs=-3.786 [converge_down]
+    SPDYA            Z_scz_e=-3.062 Z_trs=-4.414 [converge_down]
+    KIF2A            Z_scz_e=-1.687 Z_trs=-4.693 [diverge_shift]
+    ETAA1            Z_scz_e=-2.050 Z_trs=-4.273 [converge_down]
+    MAP2K5           Z_scz_e=-5.017 Z_trs=-1.220 [diverge_shift]
+    AKT1             Z_scz_e=-4.328 Z_trs=-1.533 [diverge_shift]
+    SPATA13          Z_scz_e=-2.210 Z_trs=-3.102 [converge_down]
+    PLEKHG3          Z_scz_e=-2.920 Z_trs=-2.348 [converge_down]
+    FBLN1            Z_scz_e=-3.592 Z_trs=-1.275 [diverge_shift]
+    TNC              Z_scz_e=-3.150 Z_trs=-1.490 [weak]
+    THBS1            Z_scz_e=-2.460 Z_trs=-1.848 [weak]
+    PLXNA2           Z_scz_e=-1.091 Z_trs=-3.184 [diverge_shift]
+    LDB2             Z_scz_e=-2.061 Z_trs=-2.204 [converge_down]
+    ERP29            Z_scz_e=-1.085 Z_trs=-3.152 [diverge_shift]
+    PARD6B           Z_scz_e=-2.533 Z_trs=-1.242 [weak]
+    SNCA             Z_scz_e=-1.819 Z_trs=-1.931 [weak]
+    CADM4            Z_scz_e=-2.025 Z_trs=-0.146 [weak]
+    PLXNA4           Z_scz_e=-1.139 Z_trs=-0.914 [weak]
+    MAP2K1           Z_scz_e=-1.213 Z_trs=-0.713 [weak]
+    RHOB             Z_scz_e=-1.095 Z_trs=-0.828 [weak]
+    IL34             Z_scz_e=-1.367 Z_trs=-0.399 [weak]
+    SPOCK2           Z_scz_e=-0.265 Z_trs=-1.448 [weak]
+    ARHGAP18         Z_scz_e=-0.444 Z_trs=-0.993 [weak]
+    PKN1             Z_scz_e=-1.403 Z_trs=0.019 [weak]
+    CSRP3            Z_scz_e=-0.243 Z_trs=-1.118 [weak]
+    ATP2B4           Z_scz_e=-0.545 Z_trs=-0.463 [weak]
+    HACE1            Z_scz_e=-0.395 Z_trs=-0.436 [weak]
+    TLR4             Z_scz_e=0.575 Z_trs=-1.376 [weak]
+    EZH2             Z_scz_e=-0.816 Z_trs=0.161 [weak]
+    IL1B             Z_scz_e=-0.493 Z_trs=-0.040 [weak]
+    TRIM32           Z_scz_e=0.856 Z_trs=-0.710 [weak]
+    KIT              Z_scz_e=-0.427 Z_trs=0.613 [weak]
+    TACSTD2          Z_scz_e=-0.984 Z_trs=1.222 [diverge_shift]
+    INSR             Z_scz_e=0.116 Z_trs=0.188 [weak]
+    CEACAM1          Z_scz_e=NA Z_trs=0.530 [weak]
+    PIK3CG           Z_scz_e=0.753 Z_trs=0.489 [weak]
+    FGF20            Z_scz_e=0.782 Z_trs=1.031 [weak]
+    PLXND1           Z_scz_e=0.444 Z_trs=1.535 [weak]
+    DUOX1            Z_scz_e=-0.774 Z_trs=3.106 [diverge_shift]
+    FGF1             Z_scz_e=1.374 Z_trs=0.969 [weak]
+    NTF3             Z_scz_e=2.703 Z_trs=-0.258 [diverge_shift]
+    PKN2             Z_scz_e=1.994 Z_trs=0.459 [weak]
+    PKD2             Z_scz_e=1.842 Z_trs=0.915 [weak]
+    FGFR1            Z_scz_e=1.794 Z_trs=1.054 [weak]
+    RAPGEF2          Z_scz_e=1.092 Z_trs=2.416 [weak]
+    RCC2             Z_scz_e=2.247 Z_trs=1.344 [weak]
+    CALM1            Z_scz_e=2.569 Z_trs=2.843 [converge_up]
+    ROCK2            Z_scz_e=2.000 Z_trs=3.724 [converge_up]
+    TTBK2            Z_scz_e=4.822 Z_trs=2.404 [converge_up]
+    AMOT             Z_scz_e=NA Z_trs=NA [weak]
+    BEX4             Z_scz_e=NA Z_trs=NA [weak]
+    CAVIN1           Z_scz_e=NA Z_trs=NA [weak]
+    CSF1R            Z_scz_e=NA Z_trs=NA [weak]
+    DIPK2A           Z_scz_e=NA Z_trs=NA [weak]
+    IRGM             Z_scz_e=NA Z_trs=NA [weak]
+    KIF14            Z_scz_e=NA Z_trs=NA [weak]
+    MEF2C            Z_scz_e=NA Z_trs=NA [weak]
+    PDGFB            Z_scz_e=NA Z_trs=NA [weak]
+    PDGFC            Z_scz_e=NA Z_trs=NA [weak]
+    PDGFD            Z_scz_e=NA Z_trs=NA [weak]
+    PRAG1            Z_scz_e=NA Z_trs=NA [weak]
+    PRKX             Z_scz_e=NA Z_trs=NA [weak]
+    PROX1            Z_scz_e=NA Z_trs=NA [weak]
+    ROBO1            Z_scz_e=NA Z_trs=NA [weak]
+    SH2D1A           Z_scz_e=NA Z_trs=NA [weak]
+    SPOCK3           Z_scz_e=NA Z_trs=NA [weak]
+    SST              Z_scz_e=NA Z_trs=NA [weak]
+    SYAP1            Z_scz_e=NA Z_trs=NA [weak]
+    TCIM             Z_scz_e=NA Z_trs=NA [weak]
+    TCL1A            Z_scz_e=NA Z_trs=NA [weak]
+    TENM1            Z_scz_e=NA Z_trs=NA [weak]
+    TMSB15A          Z_scz_e=NA Z_trs=NA [weak]
+    TNFSF11          Z_scz_e=NA Z_trs=NA [weak]
+
+  If motility has NO influential flags -> Stage-2 robustness restated at
+  gene resolution. If a single gene flags in the kinase set and the rest
+  stays converge_down, keep the set sentence + name the gene in a footnote.
+  Table: 36_anchor_set_genes.csv
+
+================================================================================
+8. MECHANISTIC LAYER ROSTER  (non-weak genes -> layer candidates)
+================================================================================
+  (roster empty)
+
+================================================================================
+9. RECOMMENDED REPORTING GATE
+================================================================================
+  Report a GO-level claim only if the set:
+    (a) survived the Stage-2 conservative leaderboard (CI!=0 AND perm p<0.05),
+    (b) its genes sit in converge_down/up with |Z|>1.96 in BOTH cohorts here,
+    (c) is not carried by a single recycled hub/driver gene (Section 5 + hubs).
+  A TRS-vs-SCZ claim needs genes in Section 4 (diverge_*), with confounders stated.
+  Everything else is a driver-level / hub observation, not a pathway result.
+
+  Psychedelic sentence that still matches the data:
+    Gene-level convergence on motility/cytoskeleton + kinase nodes that a
+    persistent-enhancer experiment also tagged supports a SHARED plasticity-
+    related regulatory substrate. It does NOT choose among therapeutic
+    recruitment, shared vulnerability, or generic constrained-gene overlap.
+
+================================================================================
+10. RUN WARNINGS / NOTES
+================================================================================
+  1242/1301 gene_detail rows mapped to a named module (1242 rows via SET2MOD)
+  3.7 failed:
+  Traceback (most recent call last):
+    File "/tmp/ipykernel_2112/3413486401.py", line 380, in <cell line: 0>
+      .sort_values(["class", "mean_Z"] if "mean_Z" in gene else ["class"]))
+       ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.13/dist-packages/pandas/core/frame.py", line 7172, in sort_values
+      keys = [self._get_label_or_level_values(x, axis=axis) for x in by]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+    File "/usr/local/lib/python3.13/dist-packages/pandas/core/generic.py", line 1911, in _get_label_or_level_values
+      raise KeyError(key)
+  KeyError: 'mean_Z'
+
+================================================================================
+11. OUTPUT FILES
+================================================================================
+  /content/091IvD_results/stage3/31_gene_cohort_matrix.csv  (84 KB)
+  /content/091IvD_results/stage3/33_converge_down.csv  (8 KB)
+  /content/091IvD_results/stage3/33_converge_up.csv  (8 KB)
+  /content/091IvD_results/stage3/33_diverge.csv  (13 KB)
+  /content/091IvD_results/stage3/34_gene_by_module.csv  (22 KB)
+  /content/091IvD_results/stage3/34_layer_hubs.csv  (5 KB)
+  /content/091IvD_results/stage3/35_module_concordance.csv  (0 KB)
+  /content/091IvD_results/stage3/36_anchor_set_genes.csv  (11 KB)
+  /content/091IvD_results/stage3/figures/32_anchor_gene_scatter.png  (123 KB)
+  /content/091IvD_results/stage3/figures/32_gene_scatter.png  (301 KB)
+
+================================================================================
+END OF STAGE 3 SUMMARY
+================================================================================

@@ -1,0 +1,1463 @@
+==============================================================================
+  SIGNIFICANT RESULTS SUMMARY
+  Source folder : /content/091IvD_results
+  Mode detected : multi-gene-set
+  Generated     : 2026-09-04 11:26:24
+==============================================================================
+
+  THRESHOLDS:
+    raw p-value             : < 0.05
+    FDR / global FDR        : < 0.05
+    Filter on FDR if avail. : True
+    |Stouffer Z|            : > 1.96
+    |Cohen's d|             : > 0.5
+    |Lin's CCC|             : > 0.5
+    Sign-concordance rate   : > 0.7
+    |Kendall τ|             : > 0.3
+    |Pearson r|             : > 0.3
+    |Rank-biserial r|       : > 0.3
+    include borderline      : False
+    top-N per section       : None
+
+==============================================================================
+  [1] PER-DISEASE ENRICHMENT
+==============================================================================
+  92 significant enrichment finding(s):
+
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  trs [Brain_Amygdala_spredixcan]  n=18  Stouffer Z=-4.699  perm_p=NA  wilcoxon_p=0.0056
+        → wilcoxon_p=0.0056; |Stouffer|=4.70
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  scz_eur  n=32  Stouffer Z=-8.117 CI95=[-13.30,-3.06]  perm_p=0.008499  wilcoxon_p=0.004412
+        → perm_p=0.008499; wilcoxon_p=0.004412; |Stouffer|=8.12
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  scz_eur [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=24  Stouffer Z=-4.140  perm_p=NA  wilcoxon_p=0.009576
+        → wilcoxon_p=0.009576; |Stouffer|=4.14
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  scz_eur  n=27  Stouffer Z=-7.781 CI95=[-13.53,-2.40]  perm_p=0.0105  wilcoxon_p=0.02802
+        → perm_p=0.0105; wilcoxon_p=0.02802; |Stouffer|=7.78
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  trs  n=33  Stouffer Z=-7.109 CI95=[-12.57,-1.87]  perm_p=0.0153  wilcoxon_p=0.02295
+        → perm_p=0.0153; wilcoxon_p=0.02295; |Stouffer|=7.11
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  trs  n=27  Stouffer Z=-7.036 CI95=[-12.03,-2.52]  perm_p=0.0162  wilcoxon_p=0.01619
+        → perm_p=0.0162; wilcoxon_p=0.01619; |Stouffer|=7.04
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  trs [Brain_Amygdala_spredixcan]  n=15  Stouffer Z=-3.798  perm_p=NA  wilcoxon_p=0.01807
+        → wilcoxon_p=0.01807; |Stouffer|=3.80
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  scz_eur [Brain_Amygdala_spredixcan]  n=16  Stouffer Z=-4.654  perm_p=NA  wilcoxon_p=0.01825
+        → wilcoxon_p=0.01825; |Stouffer|=4.65
+    • [POTASSIUM_ION_TRANSPORT_GO_0006813]  scz_eur [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=17  Stouffer Z=3.418  perm_p=NA  wilcoxon_p=0.02016
+        → wilcoxon_p=0.02016; |Stouffer|=3.42
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  trs [Brain_Caudate_basal_ganglia_spredixcan]  n=26  Stouffer Z=-3.026  perm_p=NA  wilcoxon_p=0.02535
+        → wilcoxon_p=0.02535; |Stouffer|=3.03
+    • [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558]  scz_eur  n=5  Stouffer Z=-6.794 CI95=[-14.88,-1.10]  perm_p=0.0267  wilcoxon_p=NA
+        → perm_p=0.0267; |Stouffer|=6.79
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  scz_eur [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=23  Stouffer Z=-3.179  perm_p=NA  wilcoxon_p=0.02767
+        → wilcoxon_p=0.02767; |Stouffer|=3.18
+    • [POSITIVE_REGULATION_OF_NERVOUS_SYSTEM_DEVELOPMENT_GO_0051962]  scz_eur [Brain_Caudate_basal_ganglia_spredixcan]  n=7  Stouffer Z=2.218  perm_p=NA  wilcoxon_p=0.03125
+        → wilcoxon_p=0.03125; |Stouffer|=2.22
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  trs [Brain_Frontal_Cortex_BA9_spredixcan]  n=21  Stouffer Z=-4.238  perm_p=NA  wilcoxon_p=0.03192
+        → wilcoxon_p=0.03192; |Stouffer|=4.24
+    • [POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597]  scz_eur [Brain_Amygdala_spredixcan]  n=34  Stouffer Z=2.459  perm_p=NA  wilcoxon_p=0.0391
+        → wilcoxon_p=0.0391; |Stouffer|=2.46
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  trs [Brain_Hippocampus_spredixcan]  n=24  Stouffer Z=-3.155  perm_p=NA  wilcoxon_p=0.03948
+        → wilcoxon_p=0.03948; |Stouffer|=3.15
+    • [CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742]  scz_eur [Brain_Caudate_basal_ganglia_spredixcan]  n=28  Stouffer Z=2.928  perm_p=NA  wilcoxon_p=0.04021
+        → wilcoxon_p=0.04021; |Stouffer|=2.93
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  scz_eur [Brain_Amygdala_spredixcan]  n=14  Stouffer Z=-4.351  perm_p=NA  wilcoxon_p=0.04187
+        → wilcoxon_p=0.04187; |Stouffer|=4.35
+    • [NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399]  scz_eur [Brain_Caudate_basal_ganglia_spredixcan]  n=71  Stouffer Z=2.970  perm_p=NA  wilcoxon_p=0.04252
+        → wilcoxon_p=0.04252; |Stouffer|=2.97
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  scz_eur [Brain_Hippocampus_spredixcan]  n=22  Stouffer Z=-3.737  perm_p=NA  wilcoxon_p=0.04616
+        → wilcoxon_p=0.04616; |Stouffer|=3.74
+    • [POTASSIUM_ION_TRANSPORT_GO_0006813]  trs [Brain_Caudate_basal_ganglia_spredixcan]  n=26  Stouffer Z=2.060  perm_p=NA  wilcoxon_p=0.04797
+        → wilcoxon_p=0.04797; |Stouffer|=2.06
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  scz_eur [Brain_Hippocampus_spredixcan]  n=19  Stouffer Z=-4.798  perm_p=NA  wilcoxon_p=0.04937
+        → wilcoxon_p=0.04937; |Stouffer|=4.80
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  trs [Brain_Caudate_basal_ganglia_spredixcan]  n=19  Stouffer Z=-3.407  perm_p=NA  wilcoxon_p=0.05457
+        → |Stouffer|=3.41
+    • [LIMB_DEVELOPMENT_GO_0060173]  scz_eur [Brain_Amygdala_spredixcan]  n=9  Stouffer Z=2.877  perm_p=NA  wilcoxon_p=0.05469
+        → |Stouffer|=2.88
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  trs [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=25  Stouffer Z=-3.119  perm_p=NA  wilcoxon_p=0.05875
+        → |Stouffer|=3.12
+    • [POTASSIUM_ION_TRANSPORT_GO_0006813]  trs [Brain_Amygdala_spredixcan]  n=17  Stouffer Z=2.427  perm_p=NA  wilcoxon_p=0.07141
+        → |Stouffer|=2.43
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  scz_eur [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=16  Stouffer Z=-3.683  perm_p=NA  wilcoxon_p=0.07391
+        → |Stouffer|=3.68
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  scz_eur [Brain_Frontal_Cortex_BA9_spredixcan]  n=21  Stouffer Z=-3.812  perm_p=NA  wilcoxon_p=0.07598
+        → |Stouffer|=3.81
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  scz_eur [Brain_Frontal_Cortex_BA9_spredixcan]  n=21  Stouffer Z=-3.018  perm_p=NA  wilcoxon_p=0.0822
+        → |Stouffer|=3.02
+    • [BLOOD_VESSEL_MORPHOGENESIS_GO_0048514]  trs [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=10  Stouffer Z=-2.238  perm_p=NA  wilcoxon_p=0.08398
+        → |Stouffer|=2.24
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  scz_eur [Brain_Caudate_basal_ganglia_spredixcan]  n=19  Stouffer Z=-3.199  perm_p=NA  wilcoxon_p=0.08743
+        → |Stouffer|=3.20
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  trs [Brain_Hippocampus_spredixcan]  n=17  Stouffer Z=-3.750  perm_p=NA  wilcoxon_p=0.08865
+        → |Stouffer|=3.75
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  trs [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=25  Stouffer Z=-2.913  perm_p=NA  wilcoxon_p=0.09032
+        → |Stouffer|=2.91
+    • [DNA_CONFORMATION_CHANGE_GO_0071103]  scz_eur [Brain_Hippocampus_spredixcan]  n=6  Stouffer Z=-2.788  perm_p=NA  wilcoxon_p=0.09375
+        → |Stouffer|=2.79
+    • [POTASSIUM_ION_TRANSPORT_GO_0006813]  trs [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=17  Stouffer Z=2.883  perm_p=NA  wilcoxon_p=0.09837
+        → |Stouffer|=2.88
+    • [POTASSIUM_ION_TRANSPORT_GO_0006813]  scz_eur [Brain_Hippocampus_spredixcan]  n=18  Stouffer Z=-2.436  perm_p=NA  wilcoxon_p=0.1084
+        → |Stouffer|=2.44
+    • [EPITHELIAL_TUBE_MORPHOGENESIS_GO_0060562]  trs [Brain_Caudate_basal_ganglia_spredixcan]  n=8  Stouffer Z=-2.116  perm_p=NA  wilcoxon_p=0.1094
+        → |Stouffer|=2.12
+    • [REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901]  scz_eur [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=7  Stouffer Z=3.578  perm_p=NA  wilcoxon_p=0.1094
+        → |Stouffer|=3.58
+    • [TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINASE_SIGNALING_PATHWAY_GO_0007169]  trs [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=43  Stouffer Z=2.257  perm_p=NA  wilcoxon_p=0.1129
+        → |Stouffer|=2.26
+    • [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558]  trs  n=4  Stouffer Z=-4.336 CI95=[-7.67,-1.33]  perm_p=0.1216  wilcoxon_p=NA
+        → |Stouffer|=4.34
+    • [CELL_JUNCTION_ASSEMBLY_GO_0034329]  trs [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=19  Stouffer Z=-2.259  perm_p=NA  wilcoxon_p=0.1232
+        → |Stouffer|=2.26
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  scz_eur [Brain_Frontal_Cortex_BA9_spredixcan]  n=10  Stouffer Z=3.083  perm_p=NA  wilcoxon_p=0.1309
+        → |Stouffer|=3.08
+    • [HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156]  scz_eur [Brain_Caudate_basal_ganglia_spredixcan]  n=10  Stouffer Z=2.006  perm_p=NA  wilcoxon_p=0.1309
+        → |Stouffer|=2.01
+    • [REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901]  trs [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=8  Stouffer Z=3.055  perm_p=NA  wilcoxon_p=0.1484
+        → |Stouffer|=3.05
+    • [POSITIVE_REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051491]  scz_eur [Brain_Frontal_Cortex_BA9_spredixcan]  n=6  Stouffer Z=-3.173  perm_p=NA  wilcoxon_p=0.1562
+        → |Stouffer|=3.17
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  scz_eur [Brain_Amygdala_spredixcan]  n=10  Stouffer Z=2.050  perm_p=NA  wilcoxon_p=0.1602
+        → |Stouffer|=2.05
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  scz_eur  n=19  Stouffer Z=4.061 CI95=[-1.20,8.85]  perm_p=0.1608  wilcoxon_p=0.1447
+        → |Stouffer|=4.06
+    • [LIMB_DEVELOPMENT_GO_0060173]  scz_eur [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=9  Stouffer Z=2.665  perm_p=NA  wilcoxon_p=0.1641
+        → |Stouffer|=2.67
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  scz_eur [Brain_Caudate_basal_ganglia_spredixcan]  n=23  Stouffer Z=-1.970  perm_p=NA  wilcoxon_p=0.1695
+        → |Stouffer|=1.97
+    • [CELL_JUNCTION_ASSEMBLY_GO_0034329]  trs [Brain_Amygdala_spredixcan]  n=14  Stouffer Z=-2.097  perm_p=NA  wilcoxon_p=0.1726
+        → |Stouffer|=2.10
+    • [LIMB_DEVELOPMENT_GO_0060173]  trs [Brain_Amygdala_spredixcan]  n=9  Stouffer Z=2.366  perm_p=NA  wilcoxon_p=0.2031
+        → |Stouffer|=2.37
+    • [REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901]  trs [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=7  Stouffer Z=2.130  perm_p=NA  wilcoxon_p=0.2188
+        → |Stouffer|=2.13
+    • [HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156]  scz_eur [Brain_Hippocampus_spredixcan]  n=10  Stouffer Z=2.219  perm_p=NA  wilcoxon_p=0.2324
+        → |Stouffer|=2.22
+    • [NEURON_PROJECTION_MORPHOGENESIS_GO_0048812]  scz_eur  n=35  Stouffer Z=3.498 CI95=[-2.21,9.02]  perm_p=0.2349  wilcoxon_p=0.2726
+        → |Stouffer|=3.50
+    • [EPITHELIAL_TUBE_MORPHOGENESIS_GO_0060562]  trs  n=10  Stouffer Z=-3.287 CI95=[-6.16,-0.61]  perm_p=0.2398  wilcoxon_p=0.08398
+        → |Stouffer|=3.29
+    • [DNA_CONFORMATION_CHANGE_GO_0071103]  scz_eur  n=6  Stouffer Z=-3.248 CI95=[-8.06,0.10]  perm_p=0.2466  wilcoxon_p=0.3125
+        → |Stouffer|=3.25
+    • [POTASSIUM_ION_TRANSPORT_GO_0006813]  trs  n=32  Stouffer Z=3.245 CI95=[-1.63,7.81]  perm_p=0.2508  wilcoxon_p=0.03963
+        → wilcoxon_p=0.03963; |Stouffer|=3.25
+    • [NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399]  scz_eur  n=95  Stouffer Z=3.280 CI95=[-1.80,8.58]  perm_p=0.2592  wilcoxon_p=0.1731
+        → |Stouffer|=3.28
+    • [CELL_JUNCTION_ASSEMBLY_GO_0034329]  scz_eur [Brain_Hippocampus_spredixcan]  n=17  Stouffer Z=-2.315  perm_p=NA  wilcoxon_p=0.2633
+        → |Stouffer|=2.32
+    • [REGULATION_OF_CELL_MIGRATION_GO_0030334]  scz_eur [Brain_Hippocampus_spredixcan]  n=57  Stouffer Z=-2.087  perm_p=NA  wilcoxon_p=0.2712
+        → |Stouffer|=2.09
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  trs [Brain_Frontal_Cortex_BA9_spredixcan]  n=23  Stouffer Z=-2.306  perm_p=NA  wilcoxon_p=0.2861
+        → |Stouffer|=2.31
+    • [BLOOD_VESSEL_MORPHOGENESIS_GO_0048514]  trs  n=15  Stouffer Z=-2.907 CI95=[-6.22,0.50]  perm_p=0.2929  wilcoxon_p=0.06372
+        → |Stouffer|=2.91
+    • [REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901]  scz_eur [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=7  Stouffer Z=2.684  perm_p=NA  wilcoxon_p=0.2969
+        → |Stouffer|=2.68
+    • [BLOOD_VESSEL_MORPHOGENESIS_GO_0048514]  scz_eur  n=14  Stouffer Z=-2.895 CI95=[-6.69,1.25]  perm_p=0.3108  wilcoxon_p=0.2166
+        → |Stouffer|=2.90
+    • [SYNAPTIC_TRANSMISSION_GABAERGIC_GO_0051932]  scz_eur  n=6  Stouffer Z=2.837 CI95=[-1.34,8.17]  perm_p=0.3117  wilcoxon_p=0.4375
+        → |Stouffer|=2.84
+    • [REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051489]  scz_eur [Brain_Frontal_Cortex_BA9_spredixcan]  n=8  Stouffer Z=-2.427  perm_p=NA  wilcoxon_p=0.3125
+        → |Stouffer|=2.43
+    • [LIMB_DEVELOPMENT_GO_0060173]  scz_eur  n=12  Stouffer Z=2.740 CI95=[-2.09,7.86]  perm_p=0.3307  wilcoxon_p=0.4697
+        → |Stouffer|=2.74
+    • [SYNAPTIC_TRANSMISSION_GABAERGIC_GO_0051932]  trs  n=7  Stouffer Z=2.640 CI95=[-0.85,6.80]  perm_p=0.3345  wilcoxon_p=0.4688
+        → |Stouffer|=2.64
+    • [CELL_JUNCTION_ASSEMBLY_GO_0034329]  trs  n=30  Stouffer Z=-2.577 CI95=[-7.06,1.81]  perm_p=0.3658  wilcoxon_p=0.2286
+        → |Stouffer|=2.58
+    • [LIMB_DEVELOPMENT_GO_0060173]  scz_eur [Brain_Frontal_Cortex_BA9_spredixcan]  n=8  Stouffer Z=2.180  perm_p=NA  wilcoxon_p=0.3828
+        → |Stouffer|=2.18
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  trs [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=18  Stouffer Z=-2.115  perm_p=NA  wilcoxon_p=0.3927
+        → |Stouffer|=2.11
+    • [POSITIVE_REGULATION_OF_NERVOUS_SYSTEM_DEVELOPMENT_GO_0051962]  scz_eur  n=11  Stouffer Z=2.403 CI95=[0.24,4.32]  perm_p=0.396  wilcoxon_p=0.05371
+        → |Stouffer|=2.40
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  scz_eur [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=11  Stouffer Z=2.015  perm_p=NA  wilcoxon_p=0.4131
+        → |Stouffer|=2.02
+    • [TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINASE_SIGNALING_PATHWAY_GO_0007169]  trs  n=66  Stouffer Z=2.200 CI95=[-2.71,7.16]  perm_p=0.4365  wilcoxon_p=0.3286
+        → |Stouffer|=2.20
+    • [LIMB_DEVELOPMENT_GO_0060173]  trs  n=12  Stouffer Z=2.097 CI95=[-2.97,7.05]  perm_p=0.4606  wilcoxon_p=0.5693
+        → |Stouffer|=2.10
+    • [EPITHELIAL_TUBE_MORPHOGENESIS_GO_0060562]  trs [Brain_Hippocampus_spredixcan]  n=5  Stouffer Z=-2.099  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.10
+    • [NEGATIVE_REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905064]  trs [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=3  Stouffer Z=2.003  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.00
+    • [POSITIVE_REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051491]  trs [Brain_Frontal_Cortex_BA9_spredixcan]  n=4  Stouffer Z=-2.468  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.47
+    • [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558]  scz_eur [Brain_Amygdala_spredixcan]  n=5  Stouffer Z=-2.237  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.24
+    • [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558]  scz_eur [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=5  Stouffer Z=-3.196  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=3.20
+    • [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558]  scz_eur [Brain_Caudate_basal_ganglia_spredixcan]  n=4  Stouffer Z=-3.037  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=3.04
+    • [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558]  scz_eur [Brain_Frontal_Cortex_BA9_spredixcan]  n=4  Stouffer Z=-2.635  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.64
+    • [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558]  scz_eur [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=5  Stouffer Z=-3.872  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=3.87
+    • [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558]  trs [Brain_Amygdala_spredixcan]  n=4  Stouffer Z=-2.353  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.35
+    • [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558]  trs [Brain_Caudate_basal_ganglia_spredixcan]  n=3  Stouffer Z=-2.130  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.13
+    • [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558]  trs [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=4  Stouffer Z=-2.130  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.13
+    • [REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905063]  trs [Brain_Amygdala_spredixcan]  n=3  Stouffer Z=2.471  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.47
+    • [REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905063]  trs [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=4  Stouffer Z=2.348  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.35
+    • [REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905063]  trs [Brain_Nucleus_accumbens_basal_ganglia_spredixcan]  n=3  Stouffer Z=2.930  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.93
+    • [SYNAPTIC_MEMBRANE_ADHESION_GO_0099560]  scz_eur [Brain_Caudate_basal_ganglia_spredixcan]  n=3  Stouffer Z=1.979  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=1.98
+    • [SYNAPTIC_TRANSMISSION_GABAERGIC_GO_0051932]  scz_eur [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=3  Stouffer Z=2.788  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.79
+    • [SYNAPTIC_TRANSMISSION_GABAERGIC_GO_0051932]  trs [Brain_Anterior_cingulate_cortex_BA24_spredixcan]  n=4  Stouffer Z=2.772  perm_p=NA  wilcoxon_p=NA
+        → |Stouffer|=2.77
+
+==============================================================================
+  [2] DIFFERENTIAL TESTS (Kruskal-Wallis + pairwise)
+==============================================================================
+  4 significant differential pair(s):
+
+    • [REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905063]  trs vs scz_eur  mean_Z_diff=0.635  MWU p=0.2222 (FDR=0.2222)  PairedW p=0.3125  RBC=-0.520
+        → |RBC|=0.52
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  trs vs scz_eur  mean_Z_diff=-0.983  MWU p=0.2232 (FDR=0.2232)  PairedW p=0.01593  RBC=0.241
+        → PairedW_FDR=0.01593
+    • [NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399]  trs vs scz_eur  mean_Z_diff=-0.353  MWU p=0.2486 (FDR=0.2486)  PairedW p=0.02262  RBC=0.099
+        → PairedW_FDR=0.02262
+    • [CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742]  trs vs scz_eur  mean_Z_diff=-0.605  MWU p=0.2618 (FDR=0.2618)  PairedW p=0.02744  RBC=0.145
+        → PairedW_FDR=0.02744
+
+==============================================================================
+  [3] PROFILE PROXIMITY (Pearson / Spearman)
+==============================================================================
+  28 significant proximity pair(s):
+
+    • [AXONOGENESIS_GO_0007409]  trs vs scz_eur  n=41  r=0.775 (p=0)  ρ=0.611 (p=2.3e-05)  cos=0.753
+        → Pearson r=0.78 (p=0); Spearman ρ=0.61 (p=2.3e-05)
+    • [CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_GO_0071407]  trs vs scz_eur  n=35  r=0.738 (p=0)  ρ=0.734 (p=1e-06)  cos=0.727
+        → Pearson r=0.74 (p=0); Spearman ρ=0.73 (p=1e-06)
+    • [CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742]  trs vs scz_eur  n=41  r=0.762 (p=0)  ρ=0.740 (p=0)  cos=0.733
+        → Pearson r=0.76 (p=0); Spearman ρ=0.74 (p=0)
+    • [CELL_JUNCTION_ASSEMBLY_GO_0034329]  trs vs scz_eur  n=27  r=0.874 (p=0)  ρ=0.803 (p=0)  cos=0.871
+        → Pearson r=0.87 (p=0); Spearman ρ=0.80 (p=0)
+    • [NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399]  trs vs scz_eur  n=91  r=0.840 (p=0)  ρ=0.757 (p=0)  cos=0.832
+        → Pearson r=0.84 (p=0); Spearman ρ=0.76 (p=0)
+    • [NEURON_PROJECTION_MORPHOGENESIS_GO_0048812]  trs vs scz_eur  n=33  r=0.858 (p=0)  ρ=0.837 (p=0)  cos=0.855
+        → Pearson r=0.86 (p=0); Spearman ρ=0.84 (p=0)
+    • [POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597]  trs vs scz_eur  n=61  r=0.788 (p=0)  ρ=0.759 (p=0)  cos=0.784
+        → Pearson r=0.79 (p=0); Spearman ρ=0.76 (p=0)
+    • [POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANIZATION_GO_0031346]  trs vs scz_eur  n=37  r=0.731 (p=0)  ρ=0.705 (p=1e-06)  cos=0.730
+        → Pearson r=0.73 (p=0); Spearman ρ=0.71 (p=1e-06)
+    • [POSITIVE_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT_GO_0010976]  trs vs scz_eur  n=30  r=0.804 (p=0)  ρ=0.722 (p=7e-06)  cos=0.805
+        → Pearson r=0.80 (p=0); Spearman ρ=0.72 (p=7e-06)
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  trs vs scz_eur  n=27  r=0.871 (p=0)  ρ=0.848 (p=0)  cos=0.898
+        → Pearson r=0.87 (p=0); Spearman ρ=0.85 (p=0)
+    • [POTASSIUM_ION_TRANSPORT_GO_0006813]  trs vs scz_eur  n=31  r=0.826 (p=0)  ρ=0.629 (p=0.000149)  cos=0.827
+        → Pearson r=0.83 (p=0); Spearman ρ=0.63 (p=0.000149)
+    • [REGULATION_OF_CELL_MIGRATION_GO_0030334]  trs vs scz_eur  n=99  r=0.798 (p=0)  ρ=0.772 (p=0)  cos=0.794
+        → Pearson r=0.80 (p=0); Spearman ρ=0.77 (p=0)
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  trs vs scz_eur  n=32  r=0.822 (p=0)  ρ=0.819 (p=0)  cos=0.858
+        → Pearson r=0.82 (p=0); Spearman ρ=0.82 (p=0)
+    • [SYNAPSE_ORGANIZATION_GO_0050808]  trs vs scz_eur  n=37  r=0.897 (p=0)  ρ=0.841 (p=0)  cos=0.886
+        → Pearson r=0.90 (p=0); Spearman ρ=0.84 (p=0)
+    • [TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINASE_SIGNALING_PATHWAY_GO_0007169]  trs vs scz_eur  n=62  r=0.813 (p=0)  ρ=0.684 (p=0)  cos=0.811
+        → Pearson r=0.81 (p=0); Spearman ρ=0.68 (p=0)
+    • [LIMB_DEVELOPMENT_GO_0060173]  trs vs scz_eur  n=12  r=0.956 (p=1e-06)  ρ=0.937 (p=7e-06)  cos=0.958
+        → Pearson r=0.96 (p=1e-06); Spearman ρ=0.94 (p=7e-06)
+    • [REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051489]  trs vs scz_eur  n=13  r=0.936 (p=3e-06)  ρ=0.967 (p=0)  cos=0.932
+        → Pearson r=0.94 (p=3e-06); Spearman ρ=0.97 (p=0)
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  trs vs scz_eur  n=18  r=0.862 (p=4e-06)  ρ=0.835 (p=1.6e-05)  cos=0.809
+        → Pearson r=0.86 (p=4e-06); Spearman ρ=0.83 (p=1.6e-05)
+    • [ADENYLATE_CYCLASE_MODULATING_G_PROTEIN_COUPLED_RECEPTOR_SIGNALING_PATHWAY_GO_0007188]  trs vs scz_eur  n=35  r=0.685 (p=6e-06)  ρ=0.681 (p=7e-06)  cos=0.683
+        → Pearson r=0.68 (p=6e-06); Spearman ρ=0.68 (p=7e-06)
+    • [SYNAPSE_ASSEMBLY_GO_0007416]  trs vs scz_eur  n=20  r=0.821 (p=9e-06)  ρ=0.647 (p=0.002064)  cos=0.803
+        → Pearson r=0.82 (p=9e-06); Spearman ρ=0.65 (p=0.002064)
+    • [EPITHELIAL_CELL_MIGRATION_GO_0010631]  trs vs scz_eur  n=19  r=0.828 (p=1.2e-05)  ρ=0.796 (p=4.5e-05)  cos=0.822
+        → Pearson r=0.83 (p=1.2e-05); Spearman ρ=0.80 (p=4.5e-05)
+    • [HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156]  trs vs scz_eur  n=16  r=0.862 (p=1.8e-05)  ρ=0.862 (p=1.8e-05)  cos=0.822
+        → Pearson r=0.86 (p=1.8e-05); Spearman ρ=0.86 (p=1.8e-05)
+    • [POSITIVE_REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051491]  trs vs scz_eur  n=9  r=0.949 (p=9.4e-05)  ρ=0.983 (p=2e-06)  cos=0.943
+        → Pearson r=0.95 (p=9.4e-05); Spearman ρ=0.98 (p=2e-06)
+    • [REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901]  trs vs scz_eur  n=12  r=0.890 (p=0.000105)  ρ=0.853 (p=0.000418)  cos=0.888
+        → Pearson r=0.89 (p=0.000105); Spearman ρ=0.85 (p=0.000418)
+    • [SYNAPTIC_TRANSMISSION_GABAERGIC_GO_0051932]  trs vs scz_eur  n=6  r=0.975 (p=0.000912)  ρ=0.943 (p=0.004805)  cos=0.979
+        → Pearson r=0.98 (p=0.000912); Spearman ρ=0.94 (p=0.004805)
+    • [BLOOD_VESSEL_MORPHOGENESIS_GO_0048514]  trs vs scz_eur  n=14  r=0.766 (p=0.001414)  ρ=0.846 (p=0.000136)  cos=0.797
+        → Pearson r=0.77 (p=0.001414); Spearman ρ=0.85 (p=0.000136)
+    • [EPITHELIAL_TUBE_MORPHOGENESIS_GO_0060562]  trs vs scz_eur  n=10  r=0.702 (p=0.02358)  ρ=0.612 (p=0.05997)  cos=0.718
+        → Pearson r=0.70 (p=0.02358)
+    • [POSITIVE_REGULATION_OF_NERVOUS_SYSTEM_DEVELOPMENT_GO_0051962]  trs vs scz_eur  n=11  r=0.668 (p=0.02479)  ρ=0.336 (p=0.3118)  cos=0.626
+        → Pearson r=0.67 (p=0.02479)
+
+==============================================================================
+  [4] PAIRWISE DISEASE STATISTICAL TESTS
+==============================================================================
+  4 significant pairwise comparison(s):
+
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  trs vs scz_eur  n_paired=18  mean_diff=-0.983  Cohen_d(paired)=-0.70  Cohen_d(unpaired)=-0.40
+        → |Cohen's d (paired)|=0.70
+    • [REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905063]  trs vs scz_eur  n_paired=5  mean_diff=0.635  Cohen_d(paired)=0.65  Cohen_d(unpaired)=0.76
+        → |Cohen's d (paired)|=0.65; |Cohen's d (unpaired)|=0.76
+    • [HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156]  trs vs scz_eur  n_paired=16  mean_diff=-0.597  Cohen_d(paired)=-0.52  Cohen_d(unpaired)=-0.31
+        → |Cohen's d (paired)|=0.52
+    • [NEGATIVE_REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905064]  trs vs scz_eur  n_paired=5  mean_diff=0.497  Cohen_d(paired)=0.50  Cohen_d(unpaired)=0.26
+        → |Cohen's d (paired)|=0.50
+
+==============================================================================
+  [5] CONCORDANCE METRICS (sign / CCC / Kendall τ)
+==============================================================================
+  31 significant concordance pair(s):
+
+    • [SYNAPSE_ORGANIZATION_GO_0050808]  trs vs scz_eur  n_paired=37  sign_rate=0.919 (p=0)  CCC=0.885  τ=0.646 (p=0)
+        → sign_rate=0.92 (p/FDR=0); |Lin_CCC|=0.89; |τ|=0.65 (p/FDR=0)
+    • [CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742]  trs vs scz_eur  n_paired=41  sign_rate=0.854 (p=5e-06)  CCC=0.730  τ=0.566 (p=0)
+        → sign_rate=0.85 (p/FDR=3.96e-05); |Lin_CCC|=0.73; |τ|=0.57 (p/FDR=0)
+    • [NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399]  trs vs scz_eur  n_paired=91  sign_rate=0.769 (p=0)  CCC=0.832  τ=0.584 (p=0)
+        → sign_rate=0.77 (p/FDR=0); |Lin_CCC|=0.83; |τ|=0.58 (p/FDR=0)
+    • [NEURON_PROJECTION_MORPHOGENESIS_GO_0048812]  trs vs scz_eur  n_paired=33  sign_rate=0.758 (p=0.004551)  CCC=0.843  τ=0.667 (p=0)
+        → sign_rate=0.76 (p/FDR=0.008344); |Lin_CCC|=0.84; |τ|=0.67 (p/FDR=0)
+    • [REGULATION_OF_CELL_MIGRATION_GO_0030334]  trs vs scz_eur  n_paired=99  sign_rate=0.857 (p=0)  CCC=0.790  τ=0.578 (p=0)
+        → sign_rate=0.86 (p/FDR=0); |Lin_CCC|=0.79; |τ|=0.58 (p/FDR=0)
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  trs vs scz_eur  n_paired=27  sign_rate=0.852 (p=0.000311)  CCC=0.852  τ=0.652 (p=0)
+        → sign_rate=0.85 (p/FDR=0.0008552); |Lin_CCC|=0.85; |τ|=0.65 (p/FDR=0)
+    • [POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597]  trs vs scz_eur  n_paired=61  sign_rate=0.754 (p=8.8e-05)  CCC=0.780  τ=0.547 (p=0)
+        → sign_rate=0.75 (p/FDR=0.0002904); |Lin_CCC|=0.78; |τ|=0.55 (p/FDR=0)
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  trs vs scz_eur  n_paired=32  sign_rate=0.875 (p=1.9e-05)  CCC=0.821  τ=0.621 (p=0)
+        → sign_rate=0.88 (p/FDR=0.0001045); |Lin_CCC|=0.82; |τ|=0.62 (p/FDR=0)
+    • [TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINASE_SIGNALING_PATHWAY_GO_0007169]  trs vs scz_eur  n_paired=62  sign_rate=0.738 (p=0.000264)  CCC=0.810  τ=0.523 (p=0)
+        → sign_rate=0.74 (p/FDR=0.000792); |Lin_CCC|=0.81; |τ|=0.52 (p/FDR=0)
+    • [CELL_JUNCTION_ASSEMBLY_GO_0034329]  trs vs scz_eur  n_paired=27  sign_rate=0.926 (p=6e-06)  CCC=0.868  τ=0.630 (p=1e-06)
+        → sign_rate=0.93 (p/FDR=3.96e-05); |Lin_CCC|=0.87; |τ|=0.63 (p/FDR=3.3e-06)
+    • [REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051489]  trs vs scz_eur  n_paired=13  sign_rate=1.000 (p=0.000488)  CCC=0.863  τ=0.872 (p=2e-06)
+        → sign_rate=1.00 (p/FDR=0.00115); |Lin_CCC|=0.86; |τ|=0.87 (p/FDR=6e-06)
+    • [CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_GO_0071407]  trs vs scz_eur  n_paired=35  sign_rate=0.794 (p=0.000821)  CCC=0.728  τ=0.556 (p=3e-06)
+        → sign_rate=0.79 (p/FDR=0.001806); |Lin_CCC|=0.73; |τ|=0.56 (p/FDR=8.25e-06)
+    • [POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANIZATION_GO_0031346]  trs vs scz_eur  n_paired=37  sign_rate=0.838 (p=4.1e-05)  CCC=0.729  τ=0.507 (p=1e-05)
+        → sign_rate=0.84 (p/FDR=0.0001503); |Lin_CCC|=0.73; |τ|=0.51 (p/FDR=2.538e-05)
+    • [ADENYLATE_CYCLASE_MODULATING_G_PROTEIN_COUPLED_RECEPTOR_SIGNALING_PATHWAY_GO_0007188]  trs vs scz_eur  n_paired=35  sign_rate=0.743 (p=0.005988)  CCC=0.682  τ=0.506 (p=1.9e-05)
+        → sign_rate=0.74 (p/FDR=0.0104); |Lin_CCC|=0.68; |τ|=0.51 (p/FDR=4.479e-05)
+    • [POSITIVE_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT_GO_0010976]  trs vs scz_eur  n_paired=30  sign_rate=0.800 (p=0.001431)  CCC=0.796  τ=0.522 (p=2.4e-05)
+        → sign_rate=0.80 (p/FDR=0.002951); |Lin_CCC|=0.80; |τ|=0.52 (p/FDR=5.28e-05)
+    • [POTASSIUM_ION_TRANSPORT_GO_0006813]  trs vs scz_eur  n_paired=31  sign_rate=0.733 (p=0.01613)  CCC=0.823  τ=0.510 (p=2.8e-05)
+        → sign_rate=0.73 (p/FDR=0.0238); |Lin_CCC|=0.82; |τ|=0.51 (p/FDR=5.629e-05)
+    • [AXONOGENESIS_GO_0007409]  trs vs scz_eur  n_paired=41  sign_rate=0.700 (p=0.01659)  CCC=0.753  τ=0.454 (p=2.9e-05)
+        → |Lin_CCC|=0.75; |τ|=0.45 (p/FDR=5.629e-05)
+    • [HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156]  trs vs scz_eur  n_paired=16  sign_rate=1.000 (p=3.1e-05)  CCC=0.820  τ=0.700 (p=4.9e-05)
+        → sign_rate=1.00 (p/FDR=0.0001461); |Lin_CCC|=0.82; |τ|=0.70 (p/FDR=7.857e-05)
+    • [SYNAPSE_ASSEMBLY_GO_0007416]  trs vs scz_eur  n_paired=20  sign_rate=0.950 (p=4e-05)  CCC=0.802  τ=0.463 (p=0.003783)
+        → sign_rate=0.95 (p/FDR=0.0001503); |Lin_CCC|=0.80; |τ|=0.46 (p/FDR=0.004994)
+    • [LIMB_DEVELOPMENT_GO_0060173]  trs vs scz_eur  n_paired=12  sign_rate=1.000 (p=0.000488)  CCC=0.954  τ=0.818 (p=4.4e-05)
+        → sign_rate=1.00 (p/FDR=0.00115); |Lin_CCC|=0.95; |τ|=0.82 (p/FDR=7.857e-05)
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  trs vs scz_eur  n_paired=18  sign_rate=0.667 (p=0.2379)  CCC=0.800  τ=0.660 (p=4.6e-05)
+        → |Lin_CCC|=0.80; |τ|=0.66 (p/FDR=7.857e-05)
+    • [POSITIVE_REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051491]  trs vs scz_eur  n_paired=9  sign_rate=1.000 (p=0.007812)  CCC=0.881  τ=0.944 (p=5e-05)
+        → sign_rate=1.00 (p/FDR=0.01289); |Lin_CCC|=0.88; |τ|=0.94 (p/FDR=7.857e-05)
+    • [EPITHELIAL_CELL_MIGRATION_GO_0010631]  trs vs scz_eur  n_paired=19  sign_rate=0.842 (p=0.004425)  CCC=0.810  τ=0.614 (p=0.000111)
+        → sign_rate=0.84 (p/FDR=0.008344); |Lin_CCC|=0.81; |τ|=0.61 (p/FDR=0.0001665)
+    • [REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901]  trs vs scz_eur  n_paired=12  sign_rate=0.909 (p=0.01172)  CCC=0.886  τ=0.758 (p=0.00024)
+        → sign_rate=0.91 (p/FDR=0.01842); |Lin_CCC|=0.89; |τ|=0.76 (p/FDR=0.0003443)
+    • [BLOOD_VESSEL_MORPHOGENESIS_GO_0048514]  trs vs scz_eur  n_paired=14  sign_rate=0.714 (p=0.1796)  CCC=0.764  τ=0.648 (p=0.000758)
+        → |Lin_CCC|=0.76; |τ|=0.65 (p/FDR=0.001042)
+    • [SYNAPTIC_TRANSMISSION_GABAERGIC_GO_0051932]  trs vs scz_eur  n_paired=6  sign_rate=0.667 (p=0.6875)  CCC=0.967  τ=0.867 (p=0.01667)
+        → |Lin_CCC|=0.97; |τ|=0.87 (p/FDR=0.02115)
+    • [EPITHELIAL_TUBE_MORPHOGENESIS_GO_0060562]  trs vs scz_eur  n_paired=10  sign_rate=0.800 (p=0.1094)  CCC=0.662  τ=0.511 (p=0.04662)
+        → |Lin_CCC|=0.66
+    • [NEGATIVE_REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905064]  trs vs scz_eur  n_paired=5  sign_rate=1.000 (p=0.0625)  CCC=0.837  τ=0.400 (p=0.4833)
+        → |Lin_CCC|=0.84
+    • [POSITIVE_REGULATION_OF_NERVOUS_SYSTEM_DEVELOPMENT_GO_0051962]  trs vs scz_eur  n_paired=11  sign_rate=0.818 (p=0.06543)  CCC=0.564  τ=0.236 (p=0.3587)
+        → |Lin_CCC|=0.56
+    • [SYNAPTIC_MEMBRANE_ADHESION_GO_0099560]  trs vs scz_eur  n_paired=4  sign_rate=1.000 (p=0.125)  CCC=0.689  τ=0.333 (p=0.75)
+        → |Lin_CCC|=0.69
+    • [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558]  trs vs scz_eur  n_paired=4  sign_rate=1.000 (p=0.125)  CCC=0.526  τ=0.000 (p=1)
+        → |Lin_CCC|=0.53
+
+==============================================================================
+  [6] GENE-LEVEL LOO INFLUENCE (flagged genes)
+==============================================================================
+  897 influential gene-disease entries:
+
+    [ADENYLATE_CYCLASE_MODULATING_G_PROTEIN_COUPLED_RECEPTOR_SIGNALING_PATHWAY_GO_0007188] scz_eur:
+      • ADRA2A: Z=-3.84, ΔStouffer=-0.66 (243.3%)
+      • GPR161: Z=-3.64, ΔStouffer=-0.63 (230.6%)
+      • ADGRL4: Z=3.50, ΔStouffer=+0.60 (218.8%) (SIGN-FLIP)
+      • OPRL1: Z=-2.59, ΔStouffer=-0.45 (164.5%)
+      • OPRK1: Z=2.32, ΔStouffer=+0.39 (144.3%) (SIGN-FLIP)
+      • ADCY3: Z=-2.13, ΔStouffer=-0.37 (135.7%)
+      • GNAQ: Z=2.18, ΔStouffer=+0.37 (135.7%) (SIGN-FLIP)
+      • PTH2R: Z=-2.07, ΔStouffer=-0.36 (131.9%)
+      • ADGRL3: Z=-1.97, ΔStouffer=-0.34 (125.3%)
+      • INSL3: Z=-1.91, ΔStouffer=-0.33 (121.6%)
+      • P2RY12: Z=1.83, ΔStouffer=+0.31 (113.8%) (SIGN-FLIP)
+      • ADORA2B: Z=1.83, ΔStouffer=+0.31 (113.5%) (SIGN-FLIP)
+      • ADCYAP1: Z=1.65, ΔStouffer=+0.28 (102.2%) (SIGN-FLIP)
+      • ADGRL2: Z=1.58, ΔStouffer=+0.27 (97.7%)
+      • ADCY1: Z=1.38, ΔStouffer=+0.23 (85.4%)
+      • ADGRD1: Z=1.31, ΔStouffer=+0.22 (81.0%)
+      • GNAI1: Z=1.15, ΔStouffer=+0.19 (70.8%)
+      • GRM8: Z=1.13, ΔStouffer=+0.19 (69.8%)
+      • GPR26: Z=1.09, ΔStouffer=+0.18 (66.9%)
+      • ADGRF5: Z=-1.02, ΔStouffer=-0.18 (65.7%)
+      • GNAI3: Z=-1.00, ΔStouffer=-0.17 (64.1%)
+      • GNAL: Z=0.86, ΔStouffer=+0.14 (53.0%)
+      • GPR37: Z=0.80, ΔStouffer=+0.13 (48.8%)
+      • AKAP12: Z=0.80, ΔStouffer=+0.13 (48.7%)
+      • GLP1R: Z=-0.73, ΔStouffer=-0.13 (47.4%)
+      • MC5R: Z=-0.71, ΔStouffer=-0.13 (46.0%)
+      • ADGRF3: Z=0.72, ΔStouffer=+0.12 (44.0%)
+      • GPR65: Z=-0.61, ΔStouffer=-0.11 (39.9%)
+      • MC4R: Z=-0.59, ΔStouffer=-0.10 (38.5%)
+      • PTGER3: Z=0.52, ΔStouffer=+0.08 (31.0%)
+      • ADGRL1: Z=-0.33, ΔStouffer=-0.06 (22.4%)
+      • LHCGR: Z=0.36, ΔStouffer=+0.06 (21.3%)
+    [ADENYLATE_CYCLASE_MODULATING_G_PROTEIN_COUPLED_RECEPTOR_SIGNALING_PATHWAY_GO_0007188] trs:
+      • ADRA2A: Z=-4.11, ΔStouffer=-0.66 (131.7%) (SIGN-FLIP)
+      • ADORA2B: Z=3.75, ΔStouffer=+0.62 (122.9%)
+      • ADGRL4: Z=3.46, ΔStouffer=+0.57 (113.2%)
+      • ADCY1: Z=2.78, ΔStouffer=+0.46 (91.3%)
+      • ADCY3: Z=-2.69, ΔStouffer=-0.43 (85.9%)
+      • OPRK1: Z=2.60, ΔStouffer=+0.43 (85.5%)
+      • MC5R: Z=-2.62, ΔStouffer=-0.42 (83.4%)
+      • ADGRL2: Z=2.50, ΔStouffer=+0.41 (82.4%)
+      • ADGRL1: Z=-2.41, ΔStouffer=-0.38 (76.6%)
+      • INSL3: Z=-2.07, ΔStouffer=-0.33 (65.6%)
+      • GNAZ: Z=1.77, ΔStouffer=+0.29 (58.5%)
+      • ADGRL3: Z=-1.71, ΔStouffer=-0.27 (54.0%)
+      • GPR65: Z=-1.67, ΔStouffer=-0.26 (52.7%)
+      • GPR157: Z=-1.62, ΔStouffer=-0.26 (51.2%)
+      • ADCYAP1: Z=-1.51, ΔStouffer=-0.24 (47.7%)
+      • PTH2R: Z=1.43, ΔStouffer=+0.24 (47.7%)
+      • GNAI3: Z=-1.40, ΔStouffer=-0.22 (44.0%)
+      • GNAI1: Z=1.29, ΔStouffer=+0.22 (43.0%)
+      • GPR26: Z=1.25, ΔStouffer=+0.21 (41.7%)
+      • ADGRF5: Z=-1.12, ΔStouffer=-0.18 (35.0%)
+      • CNR1: Z=1.01, ΔStouffer=+0.17 (34.0%)
+      • OPRL1: Z=-1.00, ΔStouffer=-0.16 (31.0%)
+      • AKAP12: Z=0.82, ΔStouffer=+0.14 (27.8%)
+      • GRM8: Z=-0.82, ΔStouffer=-0.13 (25.3%)
+      • P2RY12: Z=0.72, ΔStouffer=+0.12 (24.7%)
+      • GNAQ: Z=0.65, ΔStouffer=+0.11 (22.4%)
+      • GPR161: Z=-0.72, ΔStouffer=-0.11 (21.9%)
+      • GLP1R: Z=-0.69, ΔStouffer=-0.11 (21.0%)
+      • GPR37: Z=-0.68, ΔStouffer=-0.10 (20.7%)
+    [AXONOGENESIS_GO_0007409] scz_eur:
+      • TNR: Z=-8.07, ΔStouffer=-1.27 (66.6%)
+      • PLEKHG4: Z=8.16, ΔStouffer=+1.24 (65.0%)
+      • NEXN: Z=-4.26, ΔStouffer=-0.68 (35.7%)
+      • EFNA5: Z=4.44, ΔStouffer=+0.66 (34.9%)
+      • PTK2: Z=4.13, ΔStouffer=+0.61 (32.3%)
+      • SEMA5B: Z=4.03, ΔStouffer=+0.60 (31.5%)
+      • DSCAML1: Z=4.01, ΔStouffer=+0.60 (31.3%)
+      • ANK3: Z=3.95, ΔStouffer=+0.59 (30.8%)
+      • SHH: Z=-3.55, ΔStouffer=-0.57 (29.9%)
+      • B4GALT6: Z=-3.54, ΔStouffer=-0.57 (29.9%)
+      • NEFH: Z=3.76, ΔStouffer=+0.56 (29.3%)
+      • POU4F1: Z=-3.07, ΔStouffer=-0.50 (26.1%)
+      • PARD6B: Z=-2.53, ΔStouffer=-0.41 (21.7%)
+    [AXONOGENESIS_GO_0007409] trs:
+      • TNR: Z=-7.58, ΔStouffer=-1.15 (60.3%)
+      • PLEKHG4: Z=6.29, ΔStouffer=+0.99 (52.2%)
+      • POU4F1: Z=-4.81, ΔStouffer=-0.72 (37.9%)
+      • NEXN: Z=-4.73, ΔStouffer=-0.71 (37.2%)
+      • SHH: Z=-4.07, ΔStouffer=-0.61 (31.9%)
+      • EFNB2: Z=3.74, ΔStouffer=+0.60 (31.5%)
+      • NEFH: Z=3.48, ΔStouffer=+0.56 (29.4%)
+      • NRXN3: Z=3.37, ΔStouffer=+0.54 (28.5%)
+      • SEMA3D: Z=-3.11, ΔStouffer=-0.46 (24.1%)
+      • PTK2: Z=2.78, ΔStouffer=+0.45 (23.7%)
+    [BLOOD_VESSEL_MORPHOGENESIS_GO_0048514] scz_eur:
+      • EGFL7: Z=-3.75, ΔStouffer=-0.93 (32.3%)
+      • SHH: Z=-3.55, ΔStouffer=-0.87 (30.3%)
+      • HEY2: Z=-3.39, ΔStouffer=-0.83 (28.8%)
+      • CAV1: Z=2.50, ΔStouffer=+0.80 (27.8%)
+      • ID1: Z=1.99, ΔStouffer=+0.66 (22.9%)
+    [BLOOD_VESSEL_MORPHOGENESIS_GO_0048514] trs:
+      • EFNB2: Z=3.74, ΔStouffer=+1.10 (38.5%)
+      • SHH: Z=-4.07, ΔStouffer=-0.99 (34.6%)
+      • HEY2: Z=-3.04, ΔStouffer=-0.71 (24.9%)
+    [CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_GO_0071407] scz_eur:
+      • CFTR: Z=-7.73, ΔStouffer=-1.28 (85.1%)
+      • HCN3: Z=-4.13, ΔStouffer=-0.68 (44.8%)
+      • AKR1B1: Z=-3.76, ΔStouffer=-0.61 (40.6%)
+      • RUVBL2: Z=3.29, ΔStouffer=+0.58 (38.2%)
+      • AQP9: Z=2.88, ΔStouffer=+0.51 (33.7%)
+      • POU4F1: Z=-3.07, ΔStouffer=-0.50 (33.0%)
+      • CYP1A1: Z=2.52, ΔStouffer=+0.45 (29.6%)
+      • ZFP36L1: Z=-2.69, ΔStouffer=-0.43 (28.7%)
+      • SSTR2: Z=2.29, ΔStouffer=+0.41 (27.1%)
+      • SLC1A1: Z=-2.33, ΔStouffer=-0.37 (24.7%)
+      • ROCK2: Z=2.00, ΔStouffer=+0.36 (23.8%)
+      • ADCY3: Z=-2.13, ΔStouffer=-0.34 (22.5%)
+      • PKD2: Z=1.84, ΔStouffer=+0.33 (22.0%)
+      • P2RY12: Z=1.83, ΔStouffer=+0.33 (21.9%)
+      • RAPGEF1: Z=-2.08, ΔStouffer=-0.33 (21.9%)
+      • AHR: Z=1.71, ΔStouffer=+0.31 (20.5%)
+    [CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_GO_0071407] trs:
+      • CYP1A1: Z=6.49, ΔStouffer=+1.06 (131.4%) (SIGN-FLIP)
+      • HCN3: Z=-4.93, ΔStouffer=-0.82 (102.2%)
+      • POU4F1: Z=-4.81, ΔStouffer=-0.80 (99.8%)
+      • CFTR: Z=-4.17, ΔStouffer=-0.70 (86.7%)
+      • ROCK2: Z=3.72, ΔStouffer=+0.60 (74.8%)
+      • RUVBL2: Z=3.35, ΔStouffer=+0.54 (67.1%)
+      • FOLR1: Z=2.93, ΔStouffer=+0.47 (58.6%)
+      • ADCY3: Z=-2.69, ΔStouffer=-0.45 (56.4%)
+      • ADCY1: Z=2.78, ΔStouffer=+0.45 (55.5%)
+      • RAPGEF2: Z=2.42, ΔStouffer=+0.39 (48.1%)
+      • MYOG: Z=2.28, ΔStouffer=+0.36 (45.2%)
+      • AQP8: Z=-2.10, ΔStouffer=-0.36 (44.3%)
+      • AHR: Z=2.06, ΔStouffer=+0.33 (40.7%)
+      • P2RY2: Z=-1.78, ΔStouffer=-0.30 (37.8%)
+      • SLC1A1: Z=-1.76, ΔStouffer=-0.30 (37.4%)
+      • AQP9: Z=-1.65, ΔStouffer=-0.28 (35.0%)
+      • AKR1B1: Z=-1.32, ΔStouffer=-0.23 (28.2%)
+      • GABRB2: Z=1.43, ΔStouffer=+0.22 (28.0%)
+      • ARL6IP5: Z=-1.28, ΔStouffer=-0.22 (27.5%)
+      • GNAI1: Z=1.29, ΔStouffer=+0.20 (25.0%)
+      • CYP1B1: Z=1.20, ΔStouffer=+0.19 (23.2%)
+    [CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742] scz_eur:
+      • CDH12: Z=-4.49, ΔStouffer=-0.69 (59.4%)
+      • NEXN: Z=-4.26, ΔStouffer=-0.66 (56.5%)
+      • CDHR3: Z=4.29, ΔStouffer=+0.63 (54.6%)
+      • SCARF1: Z=-3.87, ΔStouffer=-0.60 (51.4%)
+      • DSCAML1: Z=4.01, ΔStouffer=+0.59 (51.0%)
+      • CXADR: Z=3.94, ΔStouffer=+0.58 (50.1%)
+      • TENM2: Z=-3.42, ΔStouffer=-0.53 (45.5%)
+      • CDH8: Z=-3.06, ΔStouffer=-0.47 (40.9%)
+      • ITGB1: Z=3.19, ΔStouffer=+0.47 (40.4%)
+      • NECTIN1: Z=3.07, ΔStouffer=+0.45 (38.7%)
+      • CLDN23: Z=2.76, ΔStouffer=+0.40 (34.8%)
+      • IGSF11: Z=-2.51, ΔStouffer=-0.39 (33.8%)
+      • LRRC4: Z=-2.07, ΔStouffer=-0.32 (28.0%)
+      • CADM4: Z=-2.03, ΔStouffer=-0.32 (27.4%)
+      • ADGRL3: Z=-1.97, ΔStouffer=-0.31 (26.7%)
+      • PCDHB6: Z=2.14, ΔStouffer=+0.31 (26.7%)
+      • CNTN4: Z=2.10, ΔStouffer=+0.30 (26.1%)
+      • PTPRD: Z=2.06, ΔStouffer=+0.30 (25.7%)
+      • SDK2: Z=2.00, ΔStouffer=+0.29 (24.9%)
+      • LRRC4B: Z=1.78, ΔStouffer=+0.26 (22.0%)
+    [CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742] trs:
+      • TENM2: Z=-6.21, ΔStouffer=-0.89 (44.8%)
+      • CXADR: Z=5.49, ΔStouffer=+0.83 (41.6%)
+      • CDHR3: Z=4.73, ΔStouffer=+0.72 (36.0%)
+      • AMIGO1: Z=-4.85, ΔStouffer=-0.69 (34.7%)
+      • NEXN: Z=-4.73, ΔStouffer=-0.68 (33.9%)
+      • CDH8: Z=-4.58, ΔStouffer=-0.65 (32.7%)
+      • CLDN9: Z=3.55, ΔStouffer=+0.54 (27.3%)
+      • CDH12: Z=-2.93, ΔStouffer=-0.41 (20.6%)
+    [CELL_JUNCTION_ASSEMBLY_GO_0034329] scz_eur:
+      • RHOA: Z=-5.87, ΔStouffer=-1.08 (73.5%)
+      • CDHR3: Z=4.29, ΔStouffer=+0.84 (56.7%)
+      • GPM6A: Z=4.27, ΔStouffer=+0.83 (56.5%)
+      • CDH12: Z=-4.49, ΔStouffer=-0.82 (55.7%)
+      • DBNL: Z=-3.10, ΔStouffer=-0.56 (37.9%)
+      • POU4F1: Z=-3.07, ΔStouffer=-0.55 (37.6%)
+      • CDH8: Z=-3.06, ΔStouffer=-0.55 (37.4%)
+      • PARD6B: Z=-2.53, ΔStouffer=-0.45 (30.7%)
+      • PCDHB6: Z=2.14, ΔStouffer=+0.43 (29.2%)
+      • SDK2: Z=2.00, ΔStouffer=+0.40 (27.4%)
+      • ZDHHC2: Z=1.80, ΔStouffer=+0.37 (24.8%)
+      • ADGRL3: Z=-1.97, ΔStouffer=-0.35 (23.5%)
+      • CDH10: Z=1.46, ΔStouffer=+0.30 (20.4%)
+    [CELL_JUNCTION_ASSEMBLY_GO_0034329] trs:
+      • CDHR3: Z=4.73, ΔStouffer=+0.92 (35.8%)
+      • GPM6A: Z=4.66, ΔStouffer=+0.91 (35.3%)
+      • POU4F1: Z=-4.81, ΔStouffer=-0.85 (33.0%)
+      • RHOA: Z=-4.78, ΔStouffer=-0.84 (32.7%)
+      • CDH8: Z=-4.58, ΔStouffer=-0.81 (31.3%)
+    [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667] scz_eur:
+      • MEF2A: Z=-5.66, ΔStouffer=-1.44 (35.9%)
+      • LRP4: Z=5.62, ΔStouffer=+1.21 (30.2%)
+      • DSCAML1: Z=4.01, ΔStouffer=+0.83 (20.8%)
+      • POU4F1: Z=-3.07, ΔStouffer=-0.83 (20.8%)
+      • ANK3: Z=3.95, ΔStouffer=+0.82 (20.4%)
+    [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667] trs:
+      • LRP4: Z=5.00, ΔStouffer=+1.16 (338.9%)
+      • POU4F1: Z=-4.81, ΔStouffer=-1.10 (321.3%) (SIGN-FLIP)
+      • MEF2A: Z=-3.80, ΔStouffer=-0.86 (253.1%) (SIGN-FLIP)
+      • NEFH: Z=3.48, ΔStouffer=+0.81 (236.8%)
+      • TMEM106B: Z=2.62, ΔStouffer=+0.61 (179.0%)
+      • NTNG1: Z=-2.39, ΔStouffer=-0.54 (157.9%) (SIGN-FLIP)
+      • PARD3: Z=-1.92, ΔStouffer=-0.43 (126.2%) (SIGN-FLIP)
+      • MAP2: Z=1.70, ΔStouffer=+0.40 (117.1%)
+      • NTNG2: Z=-1.73, ΔStouffer=-0.39 (114.0%) (SIGN-FLIP)
+      • DSCAML1: Z=1.47, ΔStouffer=+0.35 (101.7%)
+      • BTBD3: Z=-1.34, ΔStouffer=-0.30 (87.7%)
+      • DOCK7: Z=-1.30, ΔStouffer=-0.29 (85.1%)
+      • PARD6B: Z=-1.24, ΔStouffer=-0.28 (81.0%)
+      • DVL1: Z=1.12, ΔStouffer=+0.27 (78.2%)
+      • ANK3: Z=0.91, ΔStouffer=+0.22 (64.1%)
+      • SLITRK5: Z=0.88, ΔStouffer=+0.21 (62.1%)
+      • MAP6: Z=0.83, ΔStouffer=+0.20 (58.1%)
+      • CTNNA2: Z=-0.61, ΔStouffer=-0.13 (38.4%)
+      • SLITRK3: Z=-0.38, ΔStouffer=-0.08 (22.8%)
+    [DNA_CONFORMATION_CHANGE_GO_0071103] scz_eur:
+      • MTERF1: Z=-6.07, ΔStouffer=-2.40 (72.2%)
+      • ERCC3: Z=1.03, ΔStouffer=+0.78 (23.4%)
+    [DNA_CONFORMATION_CHANGE_GO_0071103] trs:
+      • HMGB2: Z=3.34, ΔStouffer=+1.56 (226.8%)
+      • TOP1MT: Z=-2.45, ΔStouffer=-1.03 (149.6%) (SIGN-FLIP)
+      • MTERF1: Z=-2.01, ΔStouffer=-0.83 (121.3%) (SIGN-FLIP)
+      • ERCC3: Z=1.33, ΔStouffer=+0.66 (96.2%)
+      • TOP2B: Z=-1.27, ΔStouffer=-0.50 (73.2%)
+      • TOP1: Z=-0.63, ΔStouffer=-0.21 (31.1%)
+    [EPITHELIAL_CELL_MIGRATION_GO_0010631] scz_eur:
+      • RHOA: Z=-5.87, ΔStouffer=-1.33 (69.0%)
+      • STAT1: Z=-2.77, ΔStouffer=-0.60 (31.1%)
+      • PIK3CA: Z=2.20, ΔStouffer=+0.57 (29.6%)
+      • PKN2: Z=1.99, ΔStouffer=+0.52 (27.1%)
+      • TNFSF12: Z=1.74, ΔStouffer=+0.46 (24.0%)
+      • NOS3: Z=-2.05, ΔStouffer=-0.43 (22.3%)
+      • SMAD4: Z=1.43, ΔStouffer=+0.39 (20.2%)
+    [EPITHELIAL_CELL_MIGRATION_GO_0010631] trs:
+      • RHOA: Z=-4.78, ΔStouffer=-1.10 (143.7%) (SIGN-FLIP)
+      • SMAD4: Z=4.29, ΔStouffer=+1.03 (134.3%)
+      • STAT1: Z=-4.42, ΔStouffer=-1.02 (132.9%) (SIGN-FLIP)
+      • PXN: Z=2.43, ΔStouffer=+0.59 (77.1%)
+      • PIK3CA: Z=2.28, ΔStouffer=+0.56 (72.5%)
+      • FERMT1: Z=-2.18, ΔStouffer=-0.49 (63.9%)
+      • TNFSF12: Z=1.82, ΔStouffer=+0.45 (58.4%)
+      • FAT2: Z=-1.97, ΔStouffer=-0.44 (57.8%)
+      • PLXND1: Z=1.54, ΔStouffer=+0.38 (49.8%)
+      • DPP4: Z=-1.70, ΔStouffer=-0.38 (49.3%)
+      • CYP1B1: Z=1.20, ΔStouffer=+0.30 (39.6%)
+      • ADGRA2: Z=-1.34, ΔStouffer=-0.29 (38.4%)
+      • NOS3: Z=-1.24, ΔStouffer=-0.27 (35.3%)
+      • LOXL2: Z=-0.97, ΔStouffer=-0.21 (27.0%)
+      • KIT: Z=0.61, ΔStouffer=+0.17 (21.5%)
+      • GIPC1: Z=0.57, ΔStouffer=+0.15 (20.1%)
+    [EPITHELIAL_TUBE_MORPHOGENESIS_GO_0060562] scz_eur:
+      • SHH: Z=-3.55, ΔStouffer=-1.09 (61.2%)
+      • RYR2: Z=2.16, ΔStouffer=+0.82 (46.0%)
+      • ACVRL1: Z=-2.63, ΔStouffer=-0.78 (44.1%)
+      • PKD2: Z=1.84, ΔStouffer=+0.71 (40.0%)
+      • GLI2: Z=1.48, ΔStouffer=+0.59 (33.3%)
+      • SOX17: Z=-2.02, ΔStouffer=-0.58 (32.5%)
+    [EPITHELIAL_TUBE_MORPHOGENESIS_GO_0060562] trs:
+      • SHH: Z=-4.07, ΔStouffer=-1.18 (35.2%)
+    [HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156] scz_eur:
+      • NEXN: Z=-4.26, ΔStouffer=-1.07 (82.2%)
+      • DSCAML1: Z=4.01, ΔStouffer=+0.93 (71.8%)
+      • ITGB1: Z=3.19, ΔStouffer=+0.74 (56.6%)
+      • NECTIN1: Z=3.07, ΔStouffer=+0.71 (54.2%)
+      • IGSF11: Z=-2.51, ΔStouffer=-0.65 (49.8%)
+      • CADM4: Z=-2.03, ΔStouffer=-0.53 (40.6%)
+      • PCDHB6: Z=2.14, ΔStouffer=+0.48 (36.9%)
+      • CNTN4: Z=2.10, ΔStouffer=+0.47 (36.2%)
+      • SDK2: Z=2.00, ΔStouffer=+0.45 (34.4%)
+      • SDK1: Z=-1.34, ΔStouffer=-0.36 (27.9%)
+      • FAT2: Z=-1.03, ΔStouffer=-0.29 (22.1%)
+      • TENM3: Z=-0.92, ΔStouffer=-0.26 (20.0%)
+    [HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156] trs:
+      • NEXN: Z=-4.73, ΔStouffer=-1.11 (84.6%)
+      • IGSF11: Z=-2.77, ΔStouffer=-0.63 (48.3%)
+      • SDK1: Z=-2.44, ΔStouffer=-0.55 (42.3%)
+      • PCDHB6: Z=2.00, ΔStouffer=+0.52 (39.8%)
+      • ITGB1: Z=1.69, ΔStouffer=+0.45 (34.1%)
+      • FAT2: Z=-1.97, ΔStouffer=-0.44 (33.6%)
+      • IGSF21: Z=1.62, ΔStouffer=+0.43 (32.8%)
+      • DSCAML1: Z=1.47, ΔStouffer=+0.40 (30.1%)
+      • TENM3: Z=-1.73, ΔStouffer=-0.38 (29.2%)
+      • KIRREL3: Z=1.14, ΔStouffer=+0.31 (23.9%)
+      • CD84: Z=-1.43, ΔStouffer=-0.31 (23.6%)
+    [LIMB_DEVELOPMENT_GO_0060173] scz_eur:
+      • LRP4: Z=5.62, ΔStouffer=+1.57 (57.1%)
+      • LNPK: Z=-3.91, ΔStouffer=-1.30 (47.2%)
+      • KREMEN1: Z=3.64, ΔStouffer=+0.97 (35.4%)
+      • ZNRF3: Z=-2.34, ΔStouffer=-0.83 (30.0%)
+      • DKK1: Z=3.09, ΔStouffer=+0.81 (29.4%)
+    [LIMB_DEVELOPMENT_GO_0060173] trs:
+      • LRP4: Z=5.00, ΔStouffer=+1.41 (67.2%)
+      • LNPK: Z=-3.76, ΔStouffer=-1.23 (58.4%)
+      • KREMEN1: Z=3.67, ΔStouffer=+1.01 (48.2%)
+      • INTU: Z=3.41, ΔStouffer=+0.93 (44.4%)
+      • ZNRF3: Z=-2.64, ΔStouffer=-0.89 (42.3%)
+      • PCSK5: Z=-1.56, ΔStouffer=-0.56 (26.9%)
+      • DKK1: Z=1.93, ΔStouffer=+0.49 (23.3%)
+    [NEGATIVE_REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905064] scz_eur:
+      • HEY2: Z=-3.39, ΔStouffer=-1.59 (190.1%) (SIGN-FLIP)
+      • NFATC2: Z=0.96, ΔStouffer=+0.58 (68.9%)
+      • NFATC3: Z=0.58, ΔStouffer=+0.39 (46.6%)
+      • NFATC1: Z=0.36, ΔStouffer=+0.28 (33.1%)
+    [NEGATIVE_REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905064] trs:
+      • HEY2: Z=-3.04, ΔStouffer=-1.55 (571.3%)
+      • NFATC1: Z=2.57, ΔStouffer=+1.26 (461.9%) (SIGN-FLIP)
+      • NFATC3: Z=0.74, ΔStouffer=+0.34 (123.8%) (SIGN-FLIP)
+      • NFATC2: Z=0.64, ΔStouffer=+0.29 (105.1%) (SIGN-FLIP)
+      • PDCD4: Z=-0.30, ΔStouffer=-0.18 (66.7%)
+    [NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399] scz_eur:
+      • APC2: Z=9.50, ΔStouffer=+0.96 (28.6%)
+      • LY6H: Z=8.47, ΔStouffer=+0.86 (25.4%)
+      • LIMK1: Z=-7.93, ΔStouffer=-0.84 (24.8%)
+      • SERPINI1: Z=-7.84, ΔStouffer=-0.83 (24.5%)
+      • ZIC1: Z=7.56, ΔStouffer=+0.76 (22.6%)
+    [NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399] trs:
+      • LIMK1: Z=-7.20, ΔStouffer=-0.74 (402.7%) (SIGN-FLIP)
+      • UNC119B: Z=6.87, ΔStouffer=+0.71 (385.0%)
+      • SERPINI1: Z=-6.73, ΔStouffer=-0.69 (376.2%) (SIGN-FLIP)
+      • ZIC1: Z=6.18, ΔStouffer=+0.63 (346.6%)
+      • LY6H: Z=5.90, ΔStouffer=+0.61 (331.1%)
+      • ERBB4: Z=-5.39, ΔStouffer=-0.55 (301.2%) (SIGN-FLIP)
+      • POU4F1: Z=-4.81, ΔStouffer=-0.49 (269.1%) (SIGN-FLIP)
+      • CNTFR: Z=-4.69, ΔStouffer=-0.48 (261.9%) (SIGN-FLIP)
+      • GPM6A: Z=4.66, ΔStouffer=+0.48 (261.7%)
+      • ITM2B: Z=-4.22, ΔStouffer=-0.43 (235.5%) (SIGN-FLIP)
+      • KCNQ2: Z=4.10, ΔStouffer=+0.42 (230.1%)
+      • SHH: Z=-4.07, ΔStouffer=-0.42 (227.5%) (SIGN-FLIP)
+      • DLG4: Z=3.57, ΔStouffer=+0.37 (200.2%)
+      • GSN: Z=3.55, ΔStouffer=+0.36 (199.1%)
+      • INTU: Z=3.41, ΔStouffer=+0.35 (191.4%)
+      • BRINP3: Z=-3.13, ΔStouffer=-0.32 (174.7%) (SIGN-FLIP)
+      • AHI1: Z=3.10, ΔStouffer=+0.32 (174.2%)
+      • HDAC4: Z=-2.95, ΔStouffer=-0.30 (164.9%) (SIGN-FLIP)
+      • PTN: Z=2.91, ΔStouffer=+0.30 (163.6%)
+      • APBA1: Z=2.73, ΔStouffer=+0.28 (153.6%)
+      • JARID2: Z=-2.60, ΔStouffer=-0.27 (144.9%) (SIGN-FLIP)
+      • SDK1: Z=-2.44, ΔStouffer=-0.25 (136.3%) (SIGN-FLIP)
+      • DBNL: Z=-2.43, ΔStouffer=-0.25 (135.7%) (SIGN-FLIP)
+      • SNTG2: Z=2.41, ΔStouffer=+0.25 (135.5%)
+      • GFRA4: Z=2.31, ΔStouffer=+0.24 (130.1%)
+      • CDK5RAP2: Z=2.22, ΔStouffer=+0.23 (124.6%)
+      • LDB2: Z=-2.20, ΔStouffer=-0.23 (122.9%) (SIGN-FLIP)
+      • CAPG: Z=-2.12, ΔStouffer=-0.22 (118.3%) (SIGN-FLIP)
+      • ECT2: Z=-2.02, ΔStouffer=-0.21 (112.8%) (SIGN-FLIP)
+      • PCDHB6: Z=2.00, ΔStouffer=+0.21 (112.4%)
+      • ERCC6: Z=-1.98, ΔStouffer=-0.20 (110.4%) (SIGN-FLIP)
+      • APAF1: Z=1.95, ΔStouffer=+0.20 (109.8%)
+      • FAT4: Z=-1.94, ΔStouffer=-0.20 (108.2%) (SIGN-FLIP)
+      • VLDLR: Z=-1.89, ΔStouffer=-0.19 (105.1%) (SIGN-FLIP)
+      • EPHB1: Z=1.81, ΔStouffer=+0.19 (102.0%)
+      • ADGRL3: Z=-1.71, ΔStouffer=-0.17 (95.0%)
+      • BPNT1: Z=-1.68, ΔStouffer=-0.17 (93.4%)
+      • MAB21L2: Z=-1.67, ΔStouffer=-0.17 (93.2%)
+      • PTPRZ1: Z=1.55, ΔStouffer=+0.16 (87.2%)
+      • DPYSL4: Z=1.55, ΔStouffer=+0.16 (87.1%)
+      • PLXND1: Z=1.54, ΔStouffer=+0.16 (86.5%)
+      • ST8SIA2: Z=-1.54, ΔStouffer=-0.16 (86.0%)
+      • RAPGEF5: Z=-1.50, ΔStouffer=-0.15 (83.4%)
+      • DSCAML1: Z=1.47, ΔStouffer=+0.15 (83.0%)
+      • SHANK2: Z=1.46, ΔStouffer=+0.15 (82.2%)
+      • SPOCK2: Z=-1.45, ΔStouffer=-0.15 (80.6%)
+      • PTS: Z=1.37, ΔStouffer=+0.14 (77.1%)
+      • BTBD3: Z=-1.34, ΔStouffer=-0.14 (74.7%)
+      • ADGRA2: Z=-1.34, ΔStouffer=-0.14 (74.5%)
+      • NPAS1: Z=1.30, ΔStouffer=+0.13 (73.6%)
+      • CHRM3: Z=1.30, ΔStouffer=+0.13 (73.5%)
+      • MBNL1: Z=1.30, ΔStouffer=+0.13 (73.5%)
+      • EFNA5: Z=1.28, ΔStouffer=+0.13 (72.0%)
+      • GFRA1: Z=1.27, ΔStouffer=+0.13 (71.8%)
+      • JAG1: Z=-1.28, ΔStouffer=-0.13 (70.9%)
+      • UGT8: Z=-1.24, ΔStouffer=-0.13 (68.7%)
+      • TRAK1: Z=1.15, ΔStouffer=+0.12 (65.2%)
+      • KIRREL3: Z=1.14, ΔStouffer=+0.12 (64.3%)
+      • DVL1: Z=1.12, ΔStouffer=+0.12 (63.4%)
+      • POU3F3: Z=1.08, ΔStouffer=+0.11 (61.0%)
+      • ADGRV1: Z=-1.06, ΔStouffer=-0.11 (59.0%)
+      • ADAM23: Z=1.04, ΔStouffer=+0.11 (58.6%)
+      • ZDHHC2: Z=-1.02, ΔStouffer=-0.10 (56.6%)
+      • DACT1: Z=-0.99, ΔStouffer=-0.10 (54.9%)
+      • PKD2: Z=0.91, ΔStouffer=+0.09 (51.8%)
+      • GBX2: Z=-0.91, ΔStouffer=-0.09 (50.6%)
+      • EDNRB: Z=-0.91, ΔStouffer=-0.09 (50.2%)
+      • ST8SIA4: Z=-0.87, ΔStouffer=-0.09 (48.2%)
+      • DNM3: Z=0.81, ΔStouffer=+0.08 (45.9%)
+      • PAX6: Z=-0.71, ΔStouffer=-0.07 (39.1%)
+      • GRIK1: Z=0.66, ΔStouffer=+0.07 (37.2%)
+      • FGF14: Z=-0.67, ΔStouffer=-0.07 (36.7%)
+      • CDH2: Z=-0.61, ΔStouffer=-0.06 (33.8%)
+      • TYRO3: Z=0.59, ΔStouffer=+0.06 (33.7%)
+      • NCKAP1: Z=-0.61, ΔStouffer=-0.06 (33.5%)
+      • GDNF: Z=0.56, ΔStouffer=+0.06 (32.1%)
+      • NLGN1: Z=0.49, ΔStouffer=+0.05 (28.0%)
+      • UTP11: Z=-0.49, ΔStouffer=-0.05 (27.1%)
+      • DLX6: Z=-0.43, ΔStouffer=-0.04 (23.5%)
+      • LIG4: Z=0.41, ΔStouffer=+0.04 (23.4%)
+      • MDGA1: Z=-0.38, ΔStouffer=-0.04 (20.8%)
+    [NEURON_PROJECTION_MORPHOGENESIS_GO_0048812] scz_eur:
+      • KIF20B: Z=6.85, ΔStouffer=+1.12 (31.7%)
+      • MEF2A: Z=-5.66, ΔStouffer=-1.02 (28.9%)
+      • DIP2A: Z=-5.22, ΔStouffer=-0.95 (26.7%)
+      • LRP4: Z=5.62, ΔStouffer=+0.91 (25.8%)
+    [NEURON_PROJECTION_MORPHOGENESIS_GO_0048812] trs:
+      • KIF20B: Z=6.19, ΔStouffer=+0.99 (56.1%)
+      • POU4F1: Z=-4.81, ΔStouffer=-0.82 (46.0%)
+      • LRP4: Z=5.00, ΔStouffer=+0.80 (45.0%)
+      • GPM6A: Z=4.66, ΔStouffer=+0.74 (41.9%)
+      • MEF2A: Z=-3.80, ΔStouffer=-0.65 (36.6%)
+      • DLG4: Z=3.57, ΔStouffer=+0.56 (31.8%)
+      • NEFH: Z=3.48, ΔStouffer=+0.55 (31.0%)
+      • DTNBP1: Z=-2.63, ΔStouffer=-0.46 (25.7%)
+      • DBNL: Z=-2.43, ΔStouffer=-0.42 (23.9%)
+      • NTNG1: Z=-2.39, ΔStouffer=-0.42 (23.5%)
+      • TMEM106B: Z=2.62, ΔStouffer=+0.41 (23.0%)
+    [POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597] scz_eur:
+      • RHOA: Z=-5.87, ΔStouffer=-0.75 (98.5%)
+      • GLIPR2: Z=5.88, ΔStouffer=+0.74 (97.0%)
+      • AKT1: Z=-4.33, ΔStouffer=-0.56 (72.8%)
+      • ARID1B: Z=-4.31, ΔStouffer=-0.55 (72.5%)
+      • BTG1: Z=4.40, ΔStouffer=+0.55 (72.5%)
+      • CD34: Z=4.14, ΔStouffer=+0.52 (68.0%)
+      • PTK2: Z=4.13, ΔStouffer=+0.52 (67.9%)
+      • AKR1B1: Z=-3.76, ΔStouffer=-0.48 (63.3%)
+      • PTN: Z=3.81, ΔStouffer=+0.48 (62.5%)
+      • GPC1: Z=-2.85, ΔStouffer=-0.37 (48.2%)
+      • CPNE1: Z=-2.75, ΔStouffer=-0.35 (46.5%)
+      • ZFP36L1: Z=-2.69, ΔStouffer=-0.35 (45.5%)
+      • LAMA2: Z=2.75, ΔStouffer=+0.34 (44.9%)
+      • ACVRL1: Z=-2.63, ΔStouffer=-0.34 (44.6%)
+      • KITLG: Z=2.71, ΔStouffer=+0.34 (44.3%)
+      • MTCH2: Z=-2.38, ΔStouffer=-0.31 (40.4%)
+      • ASXL2: Z=-2.25, ΔStouffer=-0.29 (38.3%)
+      • BRINP3: Z=-2.21, ΔStouffer=-0.29 (37.5%)
+      • NGF: Z=2.17, ΔStouffer=+0.27 (35.3%)
+      • SLC6A6: Z=2.16, ΔStouffer=+0.27 (35.1%)
+      • LOXL2: Z=-1.82, ΔStouffer=-0.24 (31.0%)
+      • IFITM1: Z=1.88, ΔStouffer=+0.23 (30.5%)
+      • DAB2: Z=1.87, ΔStouffer=+0.23 (30.2%)
+      • FGFR1: Z=1.79, ΔStouffer=+0.22 (29.0%)
+      • REST: Z=1.78, ΔStouffer=+0.22 (28.8%)
+      • FRZB: Z=-1.68, ΔStouffer=-0.22 (28.7%)
+      • TP63: Z=1.75, ΔStouffer=+0.22 (28.2%)
+      • GDNF: Z=1.65, ΔStouffer=+0.20 (26.7%)
+      • PPP3CA: Z=-1.55, ΔStouffer=-0.20 (26.5%)
+      • MAPK9: Z=-1.49, ΔStouffer=-0.20 (25.6%)
+      • LAMC1: Z=-1.49, ΔStouffer=-0.19 (25.5%)
+      • ZEB1: Z=-1.45, ΔStouffer=-0.19 (25.0%)
+      • SIRT6: Z=-1.42, ΔStouffer=-0.19 (24.4%)
+      • SNAI1: Z=-1.42, ΔStouffer=-0.19 (24.4%)
+      • SMAD4: Z=1.43, ΔStouffer=+0.18 (23.0%)
+      • MYOG: Z=1.32, ΔStouffer=+0.16 (21.2%)
+      • PLCB1: Z=1.26, ΔStouffer=+0.15 (20.1%)
+    [POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597] trs:
+      • RHOA: Z=-4.78, ΔStouffer=-0.59 (59.1%)
+      • ARID1B: Z=-4.76, ΔStouffer=-0.59 (58.9%)
+      • KITLG: Z=4.41, ΔStouffer=+0.56 (56.1%)
+      • SMAD4: Z=4.29, ΔStouffer=+0.55 (54.6%)
+      • CD34: Z=4.09, ΔStouffer=+0.52 (52.1%)
+      • LAMA2: Z=3.16, ΔStouffer=+0.41 (40.4%)
+      • BRINP3: Z=-3.13, ΔStouffer=-0.39 (38.5%)
+      • GLIPR2: Z=2.99, ΔStouffer=+0.39 (38.3%)
+      • PTN: Z=2.91, ΔStouffer=+0.37 (37.3%)
+      • PTK2: Z=2.78, ΔStouffer=+0.36 (35.7%)
+      • BTG1: Z=2.68, ΔStouffer=+0.35 (34.4%)
+      • MAPK9: Z=-2.79, ΔStouffer=-0.34 (34.2%)
+      • RAPGEF2: Z=2.42, ΔStouffer=+0.31 (31.1%)
+      • DAB2: Z=2.40, ΔStouffer=+0.31 (30.9%)
+      • LAMC1: Z=-2.49, ΔStouffer=-0.31 (30.4%)
+      • MYOG: Z=2.28, ΔStouffer=+0.29 (29.4%)
+      • ID2: Z=-2.32, ΔStouffer=-0.28 (28.4%)
+      • PPP3CA: Z=-2.26, ΔStouffer=-0.28 (27.5%)
+      • MTCH2: Z=-2.24, ΔStouffer=-0.27 (27.4%)
+      • ZEB1: Z=-2.16, ΔStouffer=-0.26 (26.3%)
+      • FRZB: Z=-2.12, ΔStouffer=-0.26 (25.8%)
+      • ECT2: Z=-2.02, ΔStouffer=-0.25 (24.6%)
+      • SNAI1: Z=-1.98, ΔStouffer=-0.24 (24.1%)
+      • BMP4: Z=-1.97, ΔStouffer=-0.24 (23.9%)
+      • ASXL2: Z=-1.92, ΔStouffer=-0.23 (23.3%)
+      • TMEM64: Z=1.65, ΔStouffer=+0.22 (21.5%)
+    [POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANIZATION_GO_0031346] scz_eur:
+      • SERPINI1: Z=-7.84, ΔStouffer=-1.27 (1311.2%) (SIGN-FLIP)
+      • FUT9: Z=5.77, ΔStouffer=+0.94 (968.2%)
+      • SCARF1: Z=-3.87, ΔStouffer=-0.63 (646.9%) (SIGN-FLIP)
+      • PTN: Z=3.81, ΔStouffer=+0.62 (638.9%)
+      • CAPRIN2: Z=3.41, ΔStouffer=+0.55 (572.7%)
+      • LRRC7: Z=3.39, ΔStouffer=+0.55 (568.9%)
+      • CAMK2B: Z=-3.36, ΔStouffer=-0.54 (560.9%) (SIGN-FLIP)
+      • ROR2: Z=-3.35, ΔStouffer=-0.54 (559.5%) (SIGN-FLIP)
+      • ALKAL2: Z=-2.62, ΔStouffer=-0.42 (437.5%) (SIGN-FLIP)
+      • DLG4: Z=2.36, ΔStouffer=+0.38 (397.2%)
+      • NRDC: Z=-2.10, ΔStouffer=-0.34 (350.2%) (SIGN-FLIP)
+      • RAPGEF1: Z=-2.08, ΔStouffer=-0.34 (347.8%) (SIGN-FLIP)
+      • PTPRD: Z=2.06, ΔStouffer=+0.34 (347.1%)
+      • EPHA3: Z=-1.93, ΔStouffer=-0.31 (322.7%) (SIGN-FLIP)
+      • RIT2: Z=1.77, ΔStouffer=+0.29 (298.4%)
+      • STMN2: Z=1.29, ΔStouffer=+0.21 (217.6%)
+      • ARSB: Z=1.25, ΔStouffer=+0.20 (211.1%)
+      • PLPPR5: Z=1.21, ΔStouffer=+0.20 (203.6%)
+      • PLXNA4: Z=-1.14, ΔStouffer=-0.18 (189.5%) (SIGN-FLIP)
+      • RAPGEF2: Z=1.09, ΔStouffer=+0.18 (184.3%)
+      • DDR1: Z=-1.09, ΔStouffer=-0.18 (181.5%) (SIGN-FLIP)
+      • PLXNA2: Z=-1.09, ΔStouffer=-0.18 (181.5%) (SIGN-FLIP)
+      • ATP1B2: Z=1.07, ΔStouffer=+0.17 (180.7%)
+      • FZD1: Z=1.07, ΔStouffer=+0.17 (180.7%)
+      • PRKD1: Z=1.02, ΔStouffer=+0.17 (172.0%)
+      • DPYSL3: Z=-1.01, ΔStouffer=-0.16 (168.5%) (SIGN-FLIP)
+      • ROR1: Z=-0.94, ΔStouffer=-0.15 (156.0%) (SIGN-FLIP)
+      • AMIGO1: Z=0.92, ΔStouffer=+0.15 (155.4%)
+      • TENM3: Z=-0.92, ΔStouffer=-0.15 (152.8%) (SIGN-FLIP)
+      • TIAM2: Z=0.79, ΔStouffer=+0.13 (134.3%)
+      • NDNF: Z=-0.55, ΔStouffer=-0.09 (91.1%)
+      • CHODL: Z=0.49, ΔStouffer=+0.08 (82.7%)
+      • KIDINS220: Z=-0.49, ΔStouffer=-0.08 (81.3%)
+      • PLXND1: Z=0.44, ΔStouffer=+0.07 (75.7%)
+      • DDR2: Z=0.33, ΔStouffer=+0.05 (56.6%)
+      • MAGI2: Z=0.32, ΔStouffer=+0.05 (54.5%)
+      • MAP6: Z=-0.25, ΔStouffer=-0.04 (40.3%)
+      • TOX: Z=0.14, ΔStouffer=+0.02 (25.1%)
+    [POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANIZATION_GO_0031346] trs:
+      • SERPINI1: Z=-6.73, ΔStouffer=-1.08 (637.5%)
+      • FUT9: Z=5.20, ΔStouffer=+0.83 (490.3%) (SIGN-FLIP)
+      • AMIGO1: Z=-4.85, ΔStouffer=-0.78 (459.7%)
+      • TOX: Z=3.79, ΔStouffer=+0.60 (357.3%) (SIGN-FLIP)
+      • DLG4: Z=3.57, ΔStouffer=+0.57 (336.1%) (SIGN-FLIP)
+      • PLXNA2: Z=-3.18, ΔStouffer=-0.51 (302.5%)
+      • PTN: Z=2.91, ΔStouffer=+0.46 (274.2%) (SIGN-FLIP)
+      • LRRC7: Z=2.90, ΔStouffer=+0.46 (272.6%) (SIGN-FLIP)
+      • ALKAL2: Z=-2.52, ΔStouffer=-0.41 (239.9%)
+      • RAPGEF2: Z=2.42, ΔStouffer=+0.38 (227.3%) (SIGN-FLIP)
+      • STMN2: Z=2.18, ΔStouffer=+0.35 (205.0%) (SIGN-FLIP)
+      • TWF1: Z=-1.76, ΔStouffer=-0.28 (167.4%)
+      • TENM3: Z=-1.73, ΔStouffer=-0.28 (165.4%)
+      • PLXND1: Z=1.54, ΔStouffer=+0.24 (143.9%) (SIGN-FLIP)
+      • NRDC: Z=-1.26, ΔStouffer=-0.20 (120.3%)
+      • NDNF: Z=-1.19, ΔStouffer=-0.19 (113.4%)
+      • CAMK2B: Z=-1.17, ΔStouffer=-0.19 (111.6%)
+      • PRKD1: Z=-1.16, ΔStouffer=-0.19 (110.5%)
+      • ROR1: Z=-1.14, ΔStouffer=-0.18 (109.2%)
+      • DVL1: Z=1.12, ΔStouffer=+0.18 (105.0%) (SIGN-FLIP)
+      • MAGI2: Z=1.00, ΔStouffer=+0.16 (93.1%)
+      • PLXNA4: Z=-0.91, ΔStouffer=-0.15 (87.7%)
+      • MAP6: Z=0.83, ΔStouffer=+0.13 (76.8%)
+      • EPHA3: Z=-0.76, ΔStouffer=-0.12 (73.0%)
+      • RAPGEF1: Z=-0.65, ΔStouffer=-0.11 (63.0%)
+      • MUSK: Z=-0.63, ΔStouffer=-0.10 (61.0%)
+      • DDR2: Z=-0.56, ΔStouffer=-0.09 (54.4%)
+      • FZD1: Z=0.55, ΔStouffer=+0.09 (51.1%)
+      • CAPRIN2: Z=0.53, ΔStouffer=+0.08 (49.2%)
+      • NLGN1: Z=0.49, ΔStouffer=+0.08 (45.1%)
+      • PTPRD: Z=0.48, ΔStouffer=+0.07 (43.9%)
+      • CHODL: Z=0.44, ΔStouffer=+0.07 (40.7%)
+      • PLPPR5: Z=0.43, ΔStouffer=+0.07 (39.8%)
+      • TIAM2: Z=0.38, ΔStouffer=+0.06 (34.4%)
+      • ARSB: Z=0.29, ΔStouffer=+0.05 (26.6%)
+      • ROR2: Z=-0.23, ΔStouffer=-0.04 (23.2%)
+    [POSITIVE_REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051491] scz_eur:
+      • BCAS3: Z=-6.60, ΔStouffer=-2.12 (140.3%) (SIGN-FLIP)
+      • GPM6A: Z=4.27, ΔStouffer=+1.51 (99.7%)
+      • TENM2: Z=-3.42, ΔStouffer=-1.06 (70.0%)
+      • PIK3R1: Z=-2.29, ΔStouffer=-0.68 (45.2%)
+      • PALM: Z=1.33, ΔStouffer=+0.53 (34.8%)
+      • PLPPR5: Z=1.21, ΔStouffer=+0.48 (32.1%)
+      • CDC42: Z=1.08, ΔStouffer=+0.44 (29.2%)
+    [POSITIVE_REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051491] trs:
+      • TENM2: Z=-6.21, ΔStouffer=-2.07 (5853.8%)
+      • GPM6A: Z=4.66, ΔStouffer=+1.55 (4385.9%) (SIGN-FLIP)
+      • PIK3R1: Z=-3.87, ΔStouffer=-1.29 (3647.3%)
+      • PALM: Z=3.12, ΔStouffer=+1.04 (2932.4%) (SIGN-FLIP)
+      • CDC42: Z=1.32, ΔStouffer=+0.44 (1233.6%) (SIGN-FLIP)
+      • NLGN1: Z=0.49, ΔStouffer=+0.16 (456.6%) (SIGN-FLIP)
+      • PLPPR5: Z=0.43, ΔStouffer=+0.14 (403.6%) (SIGN-FLIP)
+      • MYO3B: Z=0.26, ΔStouffer=+0.08 (237.2%) (SIGN-FLIP)
+      • DPYSL3: Z=-0.09, ΔStouffer=-0.03 (91.5%)
+    [POSITIVE_REGULATION_OF_NERVOUS_SYSTEM_DEVELOPMENT_GO_0051962] scz_eur:
+      • PTPRD: Z=2.06, ΔStouffer=+0.54 (22.3%)
+      • RASSF10: Z=-1.23, ΔStouffer=-0.51 (21.1%)
+    [POSITIVE_REGULATION_OF_NERVOUS_SYSTEM_DEVELOPMENT_GO_0051962] trs:
+      • CLSTN1: Z=-3.47, ΔStouffer=-1.03 (128.2%)
+      • RASSF10: Z=-2.54, ΔStouffer=-0.77 (95.0%)
+      • SPEN: Z=2.45, ΔStouffer=+0.67 (83.4%)
+      • EPHB1: Z=1.81, ΔStouffer=+0.49 (60.8%)
+      • LRRC4B: Z=1.47, ΔStouffer=+0.39 (48.4%)
+      • KHDC3L: Z=1.18, ΔStouffer=+0.31 (38.1%)
+      • TRIM32: Z=-0.71, ΔStouffer=-0.24 (29.5%)
+      • SLITRK5: Z=0.88, ΔStouffer=+0.22 (27.6%)
+      • SYNDIG1: Z=0.84, ΔStouffer=+0.21 (25.9%)
+    [POSITIVE_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT_GO_0010976] scz_eur:
+      • SERPINI1: Z=-7.84, ΔStouffer=-1.41 (992.6%) (SIGN-FLIP)
+      • FUT9: Z=5.77, ΔStouffer=+1.04 (734.0%)
+      • SCARF1: Z=-3.87, ΔStouffer=-0.69 (489.4%) (SIGN-FLIP)
+      • PTN: Z=3.81, ΔStouffer=+0.69 (484.6%)
+      • CAPRIN2: Z=3.41, ΔStouffer=+0.61 (434.4%)
+      • LRRC7: Z=3.39, ΔStouffer=+0.61 (431.5%)
+      • CAMK2B: Z=-3.36, ΔStouffer=-0.60 (424.3%) (SIGN-FLIP)
+      • ROR2: Z=-3.35, ΔStouffer=-0.60 (423.2%) (SIGN-FLIP)
+      • LRP8: Z=2.63, ΔStouffer=+0.47 (335.0%)
+      • ALKAL2: Z=-2.62, ΔStouffer=-0.47 (330.8%) (SIGN-FLIP)
+      • RAPGEF1: Z=-2.08, ΔStouffer=-0.37 (262.8%) (SIGN-FLIP)
+      • EPHA3: Z=-1.93, ΔStouffer=-0.35 (243.8%) (SIGN-FLIP)
+      • RIT2: Z=1.77, ΔStouffer=+0.32 (226.6%)
+      • STMN2: Z=1.29, ΔStouffer=+0.23 (165.4%)
+      • ARSB: Z=1.25, ΔStouffer=+0.23 (160.5%)
+      • PLPPR5: Z=1.21, ΔStouffer=+0.22 (154.8%)
+      • RAPGEF2: Z=1.09, ΔStouffer=+0.20 (140.2%)
+      • ATP1B2: Z=1.07, ΔStouffer=+0.19 (137.5%)
+      • FZD1: Z=1.07, ΔStouffer=+0.19 (137.5%)
+      • DDR1: Z=-1.09, ΔStouffer=-0.19 (136.9%) (SIGN-FLIP)
+      • PRKD1: Z=1.02, ΔStouffer=+0.19 (130.9%)
+      • DPYSL3: Z=-1.01, ΔStouffer=-0.18 (127.0%) (SIGN-FLIP)
+      • ROR1: Z=-0.94, ΔStouffer=-0.17 (117.6%) (SIGN-FLIP)
+      • TENM3: Z=-0.92, ΔStouffer=-0.16 (115.1%) (SIGN-FLIP)
+      • NDNF: Z=-0.55, ΔStouffer=-0.10 (68.4%)
+      • KHDC3L: Z=-0.55, ΔStouffer=-0.10 (68.0%)
+      • KIDINS220: Z=-0.49, ΔStouffer=-0.09 (61.0%)
+      • DDR2: Z=0.33, ΔStouffer=+0.06 (43.5%)
+      • MAGI2: Z=0.32, ΔStouffer=+0.06 (41.9%)
+      • VLDLR: Z=0.22, ΔStouffer=+0.04 (29.5%)
+    [POSITIVE_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT_GO_0010976] trs:
+      • SERPINI1: Z=-6.73, ΔStouffer=-1.20 (162.8%)
+      • FUT9: Z=5.20, ΔStouffer=+0.91 (123.0%) (SIGN-FLIP)
+      • TOX: Z=3.79, ΔStouffer=+0.66 (89.3%)
+      • PTN: Z=2.91, ΔStouffer=+0.50 (68.3%)
+      • LRRC7: Z=2.90, ΔStouffer=+0.50 (67.9%)
+      • ALKAL2: Z=-2.52, ΔStouffer=-0.46 (62.0%)
+      • RAPGEF2: Z=2.42, ΔStouffer=+0.42 (56.4%)
+      • LRP8: Z=2.35, ΔStouffer=+0.40 (54.8%)
+      • STMN2: Z=2.18, ΔStouffer=+0.37 (50.7%)
+      • VLDLR: Z=-1.89, ΔStouffer=-0.34 (46.8%)
+      • TWF1: Z=-1.76, ΔStouffer=-0.32 (43.6%)
+      • TENM3: Z=-1.73, ΔStouffer=-0.32 (43.1%)
+      • NDNF: Z=-1.19, ΔStouffer=-0.22 (30.0%)
+      • CAMK2B: Z=-1.17, ΔStouffer=-0.22 (29.5%)
+      • PRKD1: Z=-1.16, ΔStouffer=-0.22 (29.2%)
+      • ROR1: Z=-1.14, ΔStouffer=-0.21 (28.9%)
+      • KHDC3L: Z=1.18, ΔStouffer=+0.20 (26.7%)
+      • MAGI2: Z=1.00, ΔStouffer=+0.17 (22.4%)
+    [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902] scz_eur:
+      • CD40: Z=-12.34, ΔStouffer=-2.27 (28.0%)
+    [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902] trs:
+      • CD40: Z=-8.98, ΔStouffer=-1.62 (22.5%)
+    [POTASSIUM_ION_TRANSPORT_GO_0006813] scz_eur:
+      • KCNN3: Z=-7.36, ΔStouffer=-1.30 (122.0%)
+      • ABCC8: Z=6.10, ΔStouffer=+1.05 (98.4%)
+      • KCNMB2: Z=5.18, ΔStouffer=+0.89 (83.3%)
+      • HCN3: Z=-4.13, ΔStouffer=-0.73 (69.1%)
+      • SLC9A2: Z=-3.66, ΔStouffer=-0.65 (61.4%)
+      • KCND3: Z=2.94, ΔStouffer=+0.50 (46.7%)
+      • SLC9A8: Z=2.78, ΔStouffer=+0.47 (44.1%)
+      • KCNK13: Z=-2.49, ΔStouffer=-0.45 (42.4%)
+      • KCNK3: Z=2.13, ΔStouffer=+0.36 (33.4%)
+      • KCNK1: Z=2.12, ΔStouffer=+0.35 (33.2%)
+      • PKD2: Z=1.84, ΔStouffer=+0.30 (28.7%)
+      • KCNA5: Z=1.82, ΔStouffer=+0.30 (28.3%)
+      • KCNH8: Z=-1.36, ΔStouffer=-0.25 (23.8%)
+      • KCNQ5: Z=1.49, ΔStouffer=+0.24 (22.9%)
+      • KCNJ5: Z=-1.25, ΔStouffer=-0.23 (22.0%)
+      • KCND2: Z=1.39, ΔStouffer=+0.23 (21.3%)
+      • HCN1: Z=-1.18, ΔStouffer=-0.22 (20.8%)
+    [POTASSIUM_ION_TRANSPORT_GO_0006813] trs:
+      • KCNN3: Z=-7.90, ΔStouffer=-1.47 (47.0%)
+      • HCN3: Z=-4.93, ΔStouffer=-0.94 (29.9%)
+      • ABCC8: Z=5.48, ΔStouffer=+0.93 (29.9%)
+      • KCND3: Z=4.67, ΔStouffer=+0.79 (25.2%)
+      • SLC9A2: Z=-3.76, ΔStouffer=-0.73 (23.2%)
+      • KCNQ2: Z=4.10, ΔStouffer=+0.69 (21.9%)
+    [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558] scz_eur:
+      • GCH1: Z=-9.91, ΔStouffer=-4.14 (60.0%)
+    [PTERIDINE_CONTAINING_COMPOUND_METABOLIC_PROCESS_GO_0042558] trs:
+      • GCH1: Z=-4.95, ΔStouffer=-2.18 (49.9%)
+    [REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901] scz_eur:
+      • HCN3: Z=-4.13, ΔStouffer=-1.24 (99.0%)
+      • CXADR: Z=3.94, ΔStouffer=+1.09 (86.6%)
+      • RANGRF: Z=-2.52, ΔStouffer=-0.78 (62.1%)
+      • CAMK2D: Z=-2.51, ΔStouffer=-0.78 (61.7%)
+      • CALM1: Z=2.57, ΔStouffer=+0.69 (55.0%)
+      • CAV1: Z=2.50, ΔStouffer=+0.67 (53.3%)
+      • RYR2: Z=2.16, ΔStouffer=+0.57 (45.6%)
+      • ANK2: Z=1.82, ΔStouffer=+0.47 (37.7%)
+      • DSP: Z=1.79, ΔStouffer=+0.47 (37.1%)
+      • HCN1: Z=-1.18, ΔStouffer=-0.39 (31.1%)
+      • NOS1AP: Z=-1.01, ΔStouffer=-0.34 (27.3%)
+      • TMEM161B: Z=1.09, ΔStouffer=+0.26 (20.9%)
+    [REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901] trs:
+      • CXADR: Z=5.49, ΔStouffer=+1.62 (192.8%) (SIGN-FLIP)
+      • HCN3: Z=-4.93, ΔStouffer=-1.52 (181.8%)
+      • CALM1: Z=2.84, ΔStouffer=+0.82 (97.8%)
+      • RANGRF: Z=-2.12, ΔStouffer=-0.68 (80.5%)
+      • CAMK2D: Z=-1.31, ΔStouffer=-0.43 (51.7%)
+      • TMEM161B: Z=1.46, ΔStouffer=+0.40 (48.1%)
+      • RYR2: Z=1.03, ΔStouffer=+0.27 (32.7%)
+      • NOS1AP: Z=-0.77, ΔStouffer=-0.27 (32.2%)
+      • ANK2: Z=1.02, ΔStouffer=+0.27 (32.1%)
+    [REGULATION_OF_CELL_MIGRATION_GO_0030334] scz_eur:
+      • TNR: Z=-8.07, ΔStouffer=-0.81 (208.6%)
+      • RHOA: Z=-5.87, ΔStouffer=-0.59 (152.0%)
+      • FAM110C: Z=5.76, ΔStouffer=+0.57 (148.1%) (SIGN-FLIP)
+      • TTBK2: Z=4.82, ΔStouffer=+0.48 (123.9%) (SIGN-FLIP)
+      • MIA3: Z=4.82, ΔStouffer=+0.48 (123.8%) (SIGN-FLIP)
+      • AKT1: Z=-4.33, ΔStouffer=-0.43 (112.1%)
+      • NEXN: Z=-4.26, ΔStouffer=-0.43 (110.3%)
+      • PTK2: Z=4.13, ΔStouffer=+0.41 (106.0%) (SIGN-FLIP)
+      • SEMA5B: Z=4.03, ΔStouffer=+0.40 (103.3%) (SIGN-FLIP)
+      • ERBB4: Z=-3.96, ΔStouffer=-0.40 (102.5%)
+      • ADRA2A: Z=-3.84, ΔStouffer=-0.39 (99.6%)
+      • STK24: Z=3.69, ΔStouffer=+0.37 (94.7%)
+      • SHH: Z=-3.55, ΔStouffer=-0.36 (92.0%)
+      • CAMK2B: Z=-3.36, ΔStouffer=-0.34 (87.1%)
+      • ROR2: Z=-3.35, ΔStouffer=-0.34 (86.8%)
+      • ITGB1: Z=3.19, ΔStouffer=+0.32 (81.9%)
+      • TNC: Z=-3.15, ΔStouffer=-0.32 (81.7%)
+      • VSIR: Z=3.05, ΔStouffer=+0.30 (78.3%)
+      • PLEKHG3: Z=-2.92, ΔStouffer=-0.29 (75.8%)
+      • FOXO3: Z=2.83, ΔStouffer=+0.28 (72.5%)
+      • YTHDF3: Z=2.81, ΔStouffer=+0.28 (71.9%)
+      • NF2: Z=-2.69, ΔStouffer=-0.27 (69.8%)
+      • NTF3: Z=2.70, ΔStouffer=+0.27 (69.2%)
+      • ACVRL1: Z=-2.63, ΔStouffer=-0.27 (68.4%)
+      • CCR1: Z=2.60, ΔStouffer=+0.26 (66.6%)
+      • PARD6B: Z=-2.53, ΔStouffer=-0.26 (65.8%)
+      • THBS1: Z=-2.46, ΔStouffer=-0.25 (63.9%)
+      • CAV1: Z=2.50, ΔStouffer=+0.25 (63.9%)
+      • IGSF10: Z=2.30, ΔStouffer=+0.23 (58.8%)
+      • RNF20: Z=2.29, ΔStouffer=+0.23 (58.4%)
+      • SPATA13: Z=-2.21, ΔStouffer=-0.22 (57.5%)
+      • RCC2: Z=2.25, ΔStouffer=+0.22 (57.5%)
+      • CNTN1: Z=2.16, ΔStouffer=+0.21 (55.3%)
+      • EMILIN2: Z=2.11, ΔStouffer=+0.21 (53.9%)
+      • LDB2: Z=-2.06, ΔStouffer=-0.21 (53.7%)
+      • LIMCH1: Z=-2.02, ΔStouffer=-0.20 (52.7%)
+      • ROCK2: Z=2.00, ΔStouffer=+0.20 (51.1%)
+      • FSHB: Z=1.91, ΔStouffer=+0.19 (48.9%)
+      • F2R: Z=1.89, ΔStouffer=+0.19 (48.2%)
+      • IFITM1: Z=1.88, ΔStouffer=+0.19 (48.0%)
+      • DAB2: Z=1.87, ΔStouffer=+0.18 (47.6%)
+      • SAP30L: Z=1.74, ΔStouffer=+0.17 (44.3%)
+      • KIF2A: Z=-1.69, ΔStouffer=-0.17 (44.0%)
+      • TWIST2: Z=1.72, ΔStouffer=+0.17 (43.9%)
+      • NTNG2: Z=-1.59, ΔStouffer=-0.16 (41.6%)
+      • APPL1: Z=1.63, ΔStouffer=+0.16 (41.5%)
+      • CORO1C: Z=1.63, ΔStouffer=+0.16 (41.5%)
+      • PPP3CA: Z=-1.55, ΔStouffer=-0.16 (40.4%)
+      • DDRGK1: Z=-1.48, ΔStouffer=-0.15 (38.7%)
+      • FLT4: Z=-1.43, ΔStouffer=-0.14 (37.3%)
+      • FER: Z=-1.42, ΔStouffer=-0.14 (37.2%)
+      • SNAI1: Z=-1.42, ΔStouffer=-0.14 (37.1%)
+      • TMEFF2: Z=-1.35, ΔStouffer=-0.14 (35.3%)
+      • FGF1: Z=1.37, ΔStouffer=+0.14 (34.9%)
+      • LAMC2: Z=1.35, ΔStouffer=+0.13 (34.3%)
+      • CAMK2A: Z=1.34, ΔStouffer=+0.13 (34.0%)
+      • PTPRJ: Z=1.27, ΔStouffer=+0.13 (32.2%)
+      • EPHA2: Z=-1.22, ΔStouffer=-0.12 (31.9%)
+      • ARSB: Z=1.25, ΔStouffer=+0.12 (31.8%)
+      • NTNG1: Z=-1.21, ΔStouffer=-0.12 (31.6%)
+      • JAG1: Z=-1.17, ΔStouffer=-0.12 (30.6%)
+      • PLXNA4: Z=-1.14, ΔStouffer=-0.12 (29.9%)
+      • ITGAX: Z=-1.10, ΔStouffer=-0.11 (28.9%)
+      • RHOB: Z=-1.10, ΔStouffer=-0.11 (28.8%)
+      • PLXNA2: Z=-1.09, ΔStouffer=-0.11 (28.6%)
+      • CDC42: Z=1.08, ΔStouffer=+0.11 (27.3%)
+      • DPYSL3: Z=-1.01, ΔStouffer=-0.10 (26.6%)
+      • PTPRK: Z=1.02, ΔStouffer=+0.10 (25.9%)
+      • SRGAP1: Z=-0.87, ΔStouffer=-0.09 (22.9%)
+      • TRIM32: Z=0.86, ΔStouffer=+0.08 (21.6%)
+      • RUFY3: Z=0.85, ΔStouffer=+0.08 (21.3%)
+      • DAAM2: Z=0.84, ΔStouffer=+0.08 (21.3%)
+      • CDH11: Z=0.83, ΔStouffer=+0.08 (21.0%)
+      • GCNT2: Z=0.82, ΔStouffer=+0.08 (20.5%)
+    [REGULATION_OF_CELL_MIGRATION_GO_0030334] trs:
+      • TNR: Z=-7.58, ΔStouffer=-0.75 (39.7%)
+      • FAM110C: Z=5.44, ΔStouffer=+0.56 (29.3%)
+      • ERBB4: Z=-5.39, ΔStouffer=-0.53 (28.0%)
+      • RHOA: Z=-4.78, ΔStouffer=-0.47 (24.8%)
+      • NEXN: Z=-4.73, ΔStouffer=-0.47 (24.6%)
+      • KIF2A: Z=-4.69, ΔStouffer=-0.46 (24.4%)
+      • YTHDF3: Z=4.05, ΔStouffer=+0.42 (22.0%)
+      • ADRA2A: Z=-4.11, ΔStouffer=-0.40 (21.2%)
+      • ADAM17: Z=3.90, ΔStouffer=+0.40 (21.2%)
+      • SHH: Z=-4.07, ΔStouffer=-0.40 (21.1%)
+      • ROCK2: Z=3.72, ΔStouffer=+0.38 (20.2%)
+    [REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051489] scz_eur:
+      • BCAS3: Z=-6.60, ΔStouffer=-1.72 (140.7%) (SIGN-FLIP)
+      • GPM6A: Z=4.27, ΔStouffer=+1.19 (96.8%)
+      • TENM2: Z=-3.42, ΔStouffer=-0.87 (71.1%)
+      • PIK3R1: Z=-2.29, ΔStouffer=-0.57 (46.6%)
+      • PALM: Z=1.33, ΔStouffer=+0.40 (32.6%)
+      • PLPPR5: Z=1.21, ΔStouffer=+0.37 (29.9%)
+      • CDC42: Z=1.08, ΔStouffer=+0.33 (27.0%)
+      • MYO10: Z=0.86, ΔStouffer=+0.27 (22.2%)
+      • DAAM2: Z=0.84, ΔStouffer=+0.27 (21.9%)
+      • GAP43: Z=-1.10, ΔStouffer=-0.25 (20.5%)
+    [REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051489] trs:
+      • TENM2: Z=-6.21, ΔStouffer=-1.72 (61200.2%) (SIGN-FLIP)
+      • GPM6A: Z=4.66, ΔStouffer=+1.29 (45959.5%)
+      • PIK3R1: Z=-3.87, ΔStouffer=-1.07 (38109.1%) (SIGN-FLIP)
+      • PALM: Z=3.12, ΔStouffer=+0.87 (30748.2%)
+      • MYO10: Z=2.51, ΔStouffer=+0.70 (24724.8%)
+      • GAP43: Z=-1.96, ΔStouffer=-0.54 (19352.2%) (SIGN-FLIP)
+      • CDC42: Z=1.32, ΔStouffer=+0.37 (12970.1%)
+      • CAPZB: Z=-0.71, ΔStouffer=-0.20 (6982.5%) (SIGN-FLIP)
+      • NLGN1: Z=0.49, ΔStouffer=+0.14 (4838.6%)
+      • PLPPR5: Z=0.43, ΔStouffer=+0.12 (4283.6%)
+      • MYO3B: Z=0.26, ΔStouffer=+0.07 (2543.1%)
+      • DPYSL3: Z=-0.09, ΔStouffer=-0.03 (896.8%) (SIGN-FLIP)
+      • DAAM2: Z=0.04, ΔStouffer=+0.01 (418.1%)
+    [REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905063] scz_eur:
+      • NFATC2: Z=0.96, ΔStouffer=+0.42 (87.0%)
+      • KIT: Z=-0.43, ΔStouffer=-0.27 (55.9%)
+      • PDCD4: Z=-0.39, ΔStouffer=-0.25 (51.7%)
+      • NFATC3: Z=0.58, ΔStouffer=+0.23 (48.4%)
+      • NFATC1: Z=0.36, ΔStouffer=+0.12 (25.0%)
+    [REGULATION_OF_VASCULAR_ASSOCIATED_SMOOTH_MUSCLE_CELL_DIFFERENTIATION_GO_1905063] trs:
+      • NFATC1: Z=2.57, ΔStouffer=+1.06 (55.8%)
+    [SYNAPSE_ASSEMBLY_GO_0007416] scz_eur:
+      • GPM6A: Z=4.27, ΔStouffer=+0.91 (47.9%)
+      • DBNL: Z=-3.10, ΔStouffer=-0.74 (39.0%)
+      • POU4F1: Z=-3.07, ΔStouffer=-0.73 (38.7%)
+      • LRRC4: Z=-2.07, ΔStouffer=-0.51 (26.8%)
+      • ADGRL3: Z=-1.97, ΔStouffer=-0.49 (25.7%)
+      • LGI2: Z=2.31, ΔStouffer=+0.47 (24.8%)
+      • PCDHB6: Z=2.14, ΔStouffer=+0.43 (22.7%)
+      • PTPRD: Z=2.06, ΔStouffer=+0.41 (21.9%)
+      • SDK2: Z=2.00, ΔStouffer=+0.40 (21.1%)
+    [SYNAPSE_ASSEMBLY_GO_0007416] trs:
+      • POU4F1: Z=-4.81, ΔStouffer=-1.04 (262.9%)
+      • GPM6A: Z=4.66, ΔStouffer=+0.99 (250.3%) (SIGN-FLIP)
+      • SDK1: Z=-2.44, ΔStouffer=-0.53 (134.5%)
+      • DBNL: Z=-2.43, ΔStouffer=-0.53 (133.9%)
+      • PCDHB6: Z=2.00, ΔStouffer=+0.42 (105.9%) (SIGN-FLIP)
+      • ADGRL3: Z=-1.71, ΔStouffer=-0.37 (94.6%)
+      • PLXND1: Z=1.54, ΔStouffer=+0.32 (80.9%)
+      • SPOCK2: Z=-1.45, ΔStouffer=-0.32 (80.7%)
+      • GABRA2: Z=1.46, ΔStouffer=+0.30 (77.0%)
+      • SHANK2: Z=1.46, ΔStouffer=+0.30 (76.8%)
+      • GABRB2: Z=1.43, ΔStouffer=+0.30 (75.4%)
+      • KIRREL3: Z=1.14, ΔStouffer=+0.23 (59.4%)
+      • DVL1: Z=1.12, ΔStouffer=+0.23 (58.6%)
+      • ZDHHC2: Z=-1.02, ΔStouffer=-0.23 (57.5%)
+      • DNM3: Z=0.81, ΔStouffer=+0.16 (41.6%)
+      • CBLN4: Z=-0.71, ΔStouffer=-0.16 (40.9%)
+      • CDH2: Z=-0.61, ΔStouffer=-0.14 (35.4%)
+      • FZD1: Z=0.55, ΔStouffer=+0.11 (27.7%)
+      • NLGN1: Z=0.49, ΔStouffer=+0.10 (24.3%)
+      • PTPRD: Z=0.48, ΔStouffer=+0.09 (23.6%)
+      • LRRC4: Z=-0.39, ΔStouffer=-0.09 (23.3%)
+    [SYNAPSE_ORGANIZATION_GO_0050808] scz_eur:
+      • CACNB3: Z=-8.29, ΔStouffer=-1.36 (112.2%)
+      • LRP4: Z=5.62, ΔStouffer=+0.90 (73.9%)
+      • CAST: Z=-4.82, ΔStouffer=-0.80 (65.8%)
+      • CBLN3: Z=4.42, ΔStouffer=+0.70 (57.9%)
+      • GPM6A: Z=4.27, ΔStouffer=+0.68 (55.9%)
+      • ANK3: Z=3.95, ΔStouffer=+0.62 (51.5%)
+      • TNC: Z=-3.15, ΔStouffer=-0.53 (43.5%)
+      • DBNL: Z=-3.10, ΔStouffer=-0.52 (42.8%)
+      • POU4F1: Z=-3.07, ΔStouffer=-0.51 (42.4%)
+      • DKK1: Z=3.09, ΔStouffer=+0.49 (40.0%)
+      • CACNB4: Z=2.94, ΔStouffer=+0.46 (38.0%)
+      • MAPT: Z=-2.49, ΔStouffer=-0.42 (34.6%)
+      • LRRC4: Z=-2.07, ΔStouffer=-0.35 (29.0%)
+      • ADGRL3: Z=-1.97, ΔStouffer=-0.34 (27.7%)
+      • PCDHB6: Z=2.14, ΔStouffer=+0.33 (27.3%)
+      • PTPRD: Z=2.06, ΔStouffer=+0.32 (26.3%)
+      • SNCA: Z=-1.82, ΔStouffer=-0.31 (25.6%)
+      • SDK2: Z=2.00, ΔStouffer=+0.31 (25.4%)
+      • F2R: Z=1.89, ΔStouffer=+0.29 (24.0%)
+      • ZDHHC2: Z=1.80, ΔStouffer=+0.28 (22.7%)
+      • LRRC4B: Z=1.78, ΔStouffer=+0.27 (22.5%)
+      • REST: Z=1.78, ΔStouffer=+0.27 (22.5%)
+      • CTNND2: Z=-1.50, ΔStouffer=-0.26 (21.4%)
+      • APPL1: Z=1.63, ΔStouffer=+0.25 (20.5%)
+    [SYNAPSE_ORGANIZATION_GO_0050808] trs:
+      • CACNB3: Z=-6.57, ΔStouffer=-1.00 (90.2%)
+      • CAST: Z=-5.56, ΔStouffer=-0.84 (76.1%)
+      • CACNB4: Z=5.36, ΔStouffer=+0.84 (75.7%)
+      • LRP4: Z=5.00, ΔStouffer=+0.78 (70.7%)
+      • GPM6A: Z=4.66, ΔStouffer=+0.73 (66.0%)
+      • POU4F1: Z=-4.81, ΔStouffer=-0.73 (65.7%)
+      • MAPT: Z=-3.57, ΔStouffer=-0.54 (48.4%)
+      • CBLN3: Z=2.85, ΔStouffer=+0.45 (40.9%)
+      • SDK1: Z=-2.44, ΔStouffer=-0.36 (32.8%)
+      • DBNL: Z=-2.43, ΔStouffer=-0.36 (32.6%)
+      • NTNG1: Z=-2.39, ΔStouffer=-0.35 (32.0%)
+      • PCDHB6: Z=2.00, ΔStouffer=+0.32 (28.9%)
+      • DKK1: Z=1.93, ΔStouffer=+0.31 (28.1%)
+      • SNCA: Z=-1.93, ΔStouffer=-0.28 (25.7%)
+      • PDZRN3: Z=-1.86, ΔStouffer=-0.27 (24.7%)
+      • ADGRL3: Z=-1.71, ΔStouffer=-0.25 (22.5%)
+      • PLXND1: Z=1.54, ΔStouffer=+0.25 (22.5%)
+      • CTNND2: Z=-1.68, ΔStouffer=-0.25 (22.1%)
+      • LRRC4B: Z=1.47, ΔStouffer=+0.24 (21.6%)
+      • SHANK2: Z=1.46, ΔStouffer=+0.24 (21.5%)
+      • UNC13C: Z=1.41, ΔStouffer=+0.23 (20.8%)
+    [SYNAPTIC_MEMBRANE_ADHESION_GO_0099560] scz_eur:
+      • LRRC4: Z=-2.07, ΔStouffer=-1.24 (434.0%)
+      • PTPRD: Z=2.06, ΔStouffer=+1.15 (402.7%) (SIGN-FLIP)
+      • LRRC4B: Z=1.78, ΔStouffer=+0.98 (345.0%) (SIGN-FLIP)
+      • NTNG1: Z=-1.21, ΔStouffer=-0.74 (260.1%)
+    [SYNAPTIC_MEMBRANE_ADHESION_GO_0099560] trs:
+      • NTNG1: Z=-2.39, ΔStouffer=-1.01 (176.6%) (SIGN-FLIP)
+      • LRRC4B: Z=1.47, ΔStouffer=+0.71 (124.0%)
+      • PTPRD: Z=0.48, ΔStouffer=+0.27 (46.8%)
+      • LRRC4: Z=-0.39, ΔStouffer=-0.12 (20.8%)
+    [SYNAPTIC_TRANSMISSION_GABAERGIC_GO_0051932] scz_eur:
+      • GABRA5: Z=6.08, ΔStouffer=+2.44 (84.3%)
+      • GABRA6: Z=-2.02, ΔStouffer=-1.18 (40.8%)
+    [SYNAPTIC_TRANSMISSION_GABAERGIC_GO_0051932] trs:
+      • GABRA5: Z=5.47, ΔStouffer=+2.02 (74.6%)
+      • GABRA6: Z=-1.52, ΔStouffer=-0.84 (31.0%)
+    [TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINASE_SIGNALING_PATHWAY_GO_0007169] scz_eur:
+      • GIGYF1: Z=13.59, ΔStouffer=+1.72 (298.9%) (SIGN-FLIP)
+      • ANGPT1: Z=-6.02, ΔStouffer=-0.77 (133.6%)
+      • EFNA5: Z=4.44, ΔStouffer=+0.56 (97.2%)
+      • AKT1: Z=-4.33, ΔStouffer=-0.55 (96.2%)
+      • SH2B2: Z=4.18, ΔStouffer=+0.53 (91.4%)
+      • PTK2: Z=4.13, ΔStouffer=+0.52 (90.2%)
+      • ERBB4: Z=-3.96, ΔStouffer=-0.51 (88.0%)
+      • PIK3C2A: Z=-3.89, ΔStouffer=-0.50 (86.5%)
+      • UBASH3B: Z=-3.50, ΔStouffer=-0.45 (77.9%)
+      • ROR2: Z=-3.35, ΔStouffer=-0.43 (74.6%)
+      • MMP9: Z=3.32, ΔStouffer=+0.42 (72.4%)
+      • NAMPT: Z=-3.02, ΔStouffer=-0.39 (67.3%)
+      • KIF16B: Z=2.96, ΔStouffer=+0.37 (64.5%)
+      • BCAR3: Z=-2.88, ΔStouffer=-0.37 (64.4%)
+      • SAMD12: Z=2.91, ΔStouffer=+0.36 (63.4%)
+      • CD8A: Z=2.83, ΔStouffer=+0.35 (61.6%)
+      • NTF3: Z=2.70, ΔStouffer=+0.34 (58.8%)
+      • ALKAL2: Z=-2.62, ΔStouffer=-0.34 (58.6%)
+      • PIK3R1: Z=-2.29, ΔStouffer=-0.30 (51.4%)
+      • PIK3CA: Z=2.20, ΔStouffer=+0.27 (47.7%)
+      • NGF: Z=2.17, ΔStouffer=+0.27 (47.0%)
+      • RAPGEF1: Z=-2.08, ΔStouffer=-0.27 (46.8%)
+      • EPHA8: Z=-2.07, ΔStouffer=-0.27 (46.4%)
+      • EPHA3: Z=-1.93, ΔStouffer=-0.25 (43.5%)
+      • FGFR1: Z=1.79, ΔStouffer=+0.22 (38.8%)
+      • CASP3: Z=-1.66, ΔStouffer=-0.22 (37.5%)
+      • IRS1: Z=1.72, ΔStouffer=+0.21 (37.1%)
+      • ZAP70: Z=-1.62, ΔStouffer=-0.21 (36.5%)
+      • APPL1: Z=1.63, ΔStouffer=+0.20 (35.1%)
+      • FLT4: Z=-1.43, ΔStouffer=-0.19 (32.2%)
+      • FER: Z=-1.42, ΔStouffer=-0.19 (32.2%)
+      • EFNB2: Z=1.40, ΔStouffer=+0.17 (30.1%)
+      • FGF1: Z=1.37, ΔStouffer=+0.17 (29.5%)
+      • AHI1: Z=1.34, ΔStouffer=+0.17 (28.7%)
+      • EPHA2: Z=-1.22, ΔStouffer=-0.16 (27.7%)
+      • PTPRJ: Z=1.27, ΔStouffer=+0.16 (27.2%)
+      • PLCB1: Z=1.26, ΔStouffer=+0.15 (26.9%)
+      • FLRT2: Z=1.21, ΔStouffer=+0.15 (25.9%)
+      • MAPKAPK3: Z=-1.12, ΔStouffer=-0.15 (25.5%)
+      • DDR1: Z=-1.09, ΔStouffer=-0.14 (24.9%)
+      • RAPGEF2: Z=1.09, ΔStouffer=+0.13 (23.3%)
+      • PRLR: Z=1.04, ΔStouffer=+0.13 (22.2%)
+      • IDE: Z=-0.95, ΔStouffer=-0.13 (21.9%)
+      • PRKD1: Z=1.02, ΔStouffer=+0.12 (21.7%)
+      • ROR1: Z=-0.94, ΔStouffer=-0.12 (21.5%)
+      • SHCBP1: Z=-0.87, ΔStouffer=-0.12 (20.0%)
+    [TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINASE_SIGNALING_PATHWAY_GO_0007169] trs:
+      • GIGYF1: Z=12.04, ΔStouffer=+1.47 (58.0%)
+      • MMP9: Z=6.90, ΔStouffer=+0.84 (32.9%)
+      • ANGPT1: Z=-6.29, ΔStouffer=-0.80 (31.5%)
+      • ERBB4: Z=-5.39, ΔStouffer=-0.69 (27.1%)
+      • SH2B2: Z=5.40, ΔStouffer=+0.65 (25.6%)
+      • ZAP70: Z=-4.93, ΔStouffer=-0.63 (24.9%)
+      • NAMPT: Z=-4.29, ΔStouffer=-0.55 (21.7%)
+      • UBASH3B: Z=-3.95, ΔStouffer=-0.51 (20.1%)
+
+==============================================================================
+  [7] FAMILY-WISE FDR (pooled across all in-run p-values)
+==============================================================================
+  107 family-wise FDR-significant entries:
+
+    • [AXONOGENESIS_GO_0007409]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_GO_0071407]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [CELL_JUNCTION_ASSEMBLY_GO_0034329]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [CELL_JUNCTION_ASSEMBLY_GO_0034329]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [NERVOUS_SYSTEM_DEVELOPMENT_GO_0007399]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [NEURON_PROJECTION_MORPHOGENESIS_GO_0048812]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [NEURON_PROJECTION_MORPHOGENESIS_GO_0048812]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [NEURON_PROJECTION_MORPHOGENESIS_GO_0048812]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANIZATION_GO_0031346]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [POSITIVE_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT_GO_0010976]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [POTASSIUM_ION_TRANSPORT_GO_0006813]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [REGULATION_OF_CELL_MIGRATION_GO_0030334]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [REGULATION_OF_CELL_MIGRATION_GO_0030334]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [REGULATION_OF_CELL_MIGRATION_GO_0030334]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [REGULATION_OF_CELL_MIGRATION_GO_0030334]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051489]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [SYNAPSE_ORGANIZATION_GO_0050808]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [SYNAPSE_ORGANIZATION_GO_0050808]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [SYNAPSE_ORGANIZATION_GO_0050808]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [SYNAPSE_ORGANIZATION_GO_0050808]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINASE_SIGNALING_PATHWAY_GO_0007169]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINASE_SIGNALING_PATHWAY_GO_0007169]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINASE_SIGNALING_PATHWAY_GO_0007169]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0  FDR=0
+    • [CELL_JUNCTION_ASSEMBLY_GO_0034329]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=1e-06  FDR=6.333e-06
+    • [CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_GO_0071407]  proximity/Spearman_p  [trs__vs__scz_eur]  p=1e-06  FDR=9.5e-06
+    • [POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANIZATION_GO_0031346]  proximity/Spearman_p  [trs__vs__scz_eur]  p=1e-06  FDR=9.5e-06
+    • [CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_GO_0071407]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=3e-06  FDR=1.9e-05
+    • [LIMB_DEVELOPMENT_GO_0060173]  proximity/Pearson_p  [trs__vs__scz_eur]  p=1e-06  FDR=1.9e-05
+    • [REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051489]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=2e-06  FDR=1.9e-05
+    • [REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051489]  proximity/Pearson_p  [trs__vs__scz_eur]  p=3e-06  FDR=1.9e-05
+    • [CELL_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0098742]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=5e-06  FDR=2.375e-05
+    • [CELL_JUNCTION_ASSEMBLY_GO_0034329]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=6e-06  FDR=2.85e-05
+    • [POSITIVE_REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051491]  proximity/Spearman_p  [trs__vs__scz_eur]  p=2e-06  FDR=3.8e-05
+    • [POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANIZATION_GO_0031346]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=1e-05  FDR=6.333e-05
+    • [ADENYLATE_CYCLASE_MODULATING_G_PROTEIN_COUPLED_RECEPTOR_SIGNALING_PATHWAY_GO_0007188]  proximity/Pearson_p  [trs__vs__scz_eur]  p=6e-06  FDR=6.65e-05
+    • [ADENYLATE_CYCLASE_MODULATING_G_PROTEIN_COUPLED_RECEPTOR_SIGNALING_PATHWAY_GO_0007188]  proximity/Spearman_p  [trs__vs__scz_eur]  p=7e-06  FDR=6.65e-05
+    • [LIMB_DEVELOPMENT_GO_0060173]  proximity/Spearman_p  [trs__vs__scz_eur]  p=7e-06  FDR=6.65e-05
+    • [POSITIVE_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT_GO_0010976]  proximity/Spearman_p  [trs__vs__scz_eur]  p=7e-06  FDR=6.65e-05
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  proximity/Pearson_p  [trs__vs__scz_eur]  p=4e-06  FDR=7.6e-05
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=1.9e-05  FDR=9.025e-05
+    • [ADENYLATE_CYCLASE_MODULATING_G_PROTEIN_COUPLED_RECEPTOR_SIGNALING_PATHWAY_GO_0007188]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=1.9e-05  FDR=0.0001203
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  proximity/Spearman_p  [trs__vs__scz_eur]  p=1.6e-05  FDR=0.000152
+    • [POSITIVE_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT_GO_0010976]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=2.4e-05  FDR=0.000152
+    • [HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156]  proximity/Pearson_p  [trs__vs__scz_eur]  p=1.8e-05  FDR=0.000171
+    • [HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156]  proximity/Spearman_p  [trs__vs__scz_eur]  p=1.8e-05  FDR=0.000171
+    • [SYNAPSE_ASSEMBLY_GO_0007416]  proximity/Pearson_p  [trs__vs__scz_eur]  p=9e-06  FDR=0.000171
+    • [AXONOGENESIS_GO_0007409]  proximity/Spearman_p  [trs__vs__scz_eur]  p=2.3e-05  FDR=0.0001837
+    • [AXONOGENESIS_GO_0007409]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=2.9e-05  FDR=0.0001837
+    • [POSITIVE_REGULATION_OF_CELL_PROJECTION_ORGANIZATION_GO_0031346]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=4.1e-05  FDR=0.0001947
+    • [HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=3.1e-05  FDR=0.0001963
+    • [EPITHELIAL_CELL_MIGRATION_GO_0010631]  proximity/Pearson_p  [trs__vs__scz_eur]  p=1.2e-05  FDR=0.000228
+    • [HOMOPHILIC_CELL_ADHESION_VIA_PLASMA_MEMBRANE_ADHESION_MOLECULES_GO_0007156]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=4.9e-05  FDR=0.0002327
+    • [POTASSIUM_ION_TRANSPORT_GO_0006813]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=2.8e-05  FDR=0.000266
+    • [LIMB_DEVELOPMENT_GO_0060173]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=4.4e-05  FDR=0.0002787
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=4.6e-05  FDR=0.0002913
+    • [SYNAPSE_ASSEMBLY_GO_0007416]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=4e-05  FDR=0.00038
+    • [POSITIVE_REGULATION_OF_CELL_DIFFERENTIATION_GO_0045597]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=8.8e-05  FDR=0.000418
+    • [EPITHELIAL_CELL_MIGRATION_GO_0010631]  proximity/Spearman_p  [trs__vs__scz_eur]  p=4.5e-05  FDR=0.0004275
+    • [POSITIVE_REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051491]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=5e-05  FDR=0.000475
+    • [POSITIVE_REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051491]  proximity/Pearson_p  [trs__vs__scz_eur]  p=9.4e-05  FDR=0.0005953
+    • [EPITHELIAL_CELL_MIGRATION_GO_0010631]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0.000111  FDR=0.000703
+    • [POTASSIUM_ION_TRANSPORT_GO_0006813]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0.000149  FDR=0.0009437
+    • [TRANSMEMBRANE_RECEPTOR_PROTEIN_TYROSINE_KINASE_SIGNALING_PATHWAY_GO_0007169]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0.000264  FDR=0.001254
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0.000311  FDR=0.001477
+    • [REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0.000105  FDR=0.001995
+    • [REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0.00024  FDR=0.00228
+    • [LIMB_DEVELOPMENT_GO_0060173]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0.000488  FDR=0.002318
+    • [REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051489]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0.000488  FDR=0.002318
+    • [BLOOD_VESSEL_MORPHOGENESIS_GO_0048514]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0.000136  FDR=0.002584
+    • [REGULATION_OF_CARDIAC_MUSCLE_CELL_ACTION_POTENTIAL_GO_0098901]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0.000418  FDR=0.002647
+    • [CELLULAR_RESPONSE_TO_ORGANIC_CYCLIC_COMPOUND_GO_0071407]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0.000821  FDR=0.0039
+    • [POSITIVE_REGULATION_OF_NEURON_PROJECTION_DEVELOPMENT_GO_0010976]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0.001431  FDR=0.006797
+    • [BLOOD_VESSEL_MORPHOGENESIS_GO_0048514]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0.000758  FDR=0.007201
+    • [BLOOD_VESSEL_MORPHOGENESIS_GO_0048514]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0.001414  FDR=0.008955
+    • [SYNAPSE_ASSEMBLY_GO_0007416]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0.002064  FDR=0.01307
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  enrichment/wilcoxon_p  [scz_eur]  p=0.004412  FDR=0.01677
+    • [SYNAPTIC_TRANSMISSION_GABAERGIC_GO_0051932]  proximity/Pearson_p  [trs__vs__scz_eur]  p=0.000912  FDR=0.01733
+    • [SYNAPSE_ASSEMBLY_GO_0007416]  pairwise_stats/Kendall_p  [trs__vs__scz_eur]  p=0.003783  FDR=0.01797
+    • [EPITHELIAL_CELL_MIGRATION_GO_0010631]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0.004425  FDR=0.02102
+    • [NEURON_PROJECTION_MORPHOGENESIS_GO_0048812]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0.004551  FDR=0.02162
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  enrichment/permutation_p  [scz_eur]  p=0.008499  FDR=0.02691
+    • [ADENYLATE_CYCLASE_MODULATING_G_PROTEIN_COUPLED_RECEPTOR_SIGNALING_PATHWAY_GO_0007188]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0.005988  FDR=0.02844
+    • [POSITIVE_REGULATION_OF_FILOPODIUM_ASSEMBLY_GO_0051491]  pairwise_stats/sign_concordance_p  [trs__vs__scz_eur]  p=0.007812  FDR=0.03711
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  enrichment/permutation_p  [scz_eur]  p=0.0105  FDR=0.0399
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  pairwise_stats/Paired_t_p  [trs__vs__scz_eur]  p=0.008471  FDR=0.04024
+    • [REGULATION_OF_CELL_MOTILITY_GO_2000145]  enrichment/permutation_p  [trs]  p=0.0153  FDR=0.04152
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  pairwise_stats/Permutation_p  [trs__vs__scz_eur]  p=0.0136  FDR=0.04324
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  differential/Paired_Wilcoxon_p  [trs__vs__scz_eur]  p=0.01593  FDR=0.04324
+    • [CELL_MORPHOGENESIS_INVOLVED_IN_NEURON_DIFFERENTIATION_GO_0048667]  pairwise_stats/Paired_Wilcoxon_p  [trs__vs__scz_eur]  p=0.01593  FDR=0.04324
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  enrichment/wilcoxon_p  [trs]  p=0.01619  FDR=0.04397
+    • [POSITIVE_REGULATION_OF_PROTEIN_SERINE_THREONINE_KINASE_ACTIVITY_GO_0071902]  enrichment/permutation_p  [trs]  p=0.0162  FDR=0.04397
+    • [SYNAPTIC_TRANSMISSION_GABAERGIC_GO_0051932]  proximity/Spearman_p  [trs__vs__scz_eur]  p=0.004805  FDR=0.04565
+
+==============================================================================
+  TOTAL HITS BY SECTION
+==============================================================================
+  1. Enrichment            : 92
+  2. Differential          : 4
+  3. Proximity             : 28
+  4. Pairwise stat tests   : 4
+  5. Concordance           : 31
+  6. Influential genes     : 897
+  7. Family-wise FDR       : 107
+  ───────────────────────────────
+  GRAND TOTAL              : 1163
+
+==============================================================================
